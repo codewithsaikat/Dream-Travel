@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+body {
+  position: relative;
+  line-height: 1.8;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #3d2514;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+input:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+.header-area {
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.header-area ul li a {
+  color: #fff;
+}
+.header-area .btn {
+  height: 59px;
+  width: 152px;
+  border: 1px solid #fff;
+  color: #FFFFFF;
+  border-color: #777F96;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.hero-area {
+  background-image: url(../assets/img/cover-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+}
+
+.hero-area--1 {
+  padding: 160px 0px 160px;
+}
+
+#hero .select-2 .form-select {
+  position: relative;
+  border: none;
+  font-size: 1rem;
+}
+#hero .select-2 .form-select .form-select-lg {
+  border: none;
+  padding-left: none;
+  font-size: 1rem;
+  position: relative;
+}
+#hero .select-2 .form-select .form-select-lg option {
+  position: absolute;
+  top: 30px;
+}
+
+#hero {
+  overflow: hidden;
+}
+
+.searchbox {
+  background-color: #fff;
+  padding: 10px 40px 10px 40px;
+  border-radius: 0.25rem;
+}
+
+.searchbox [class*=col-] {
+  padding: 0px;
+}
+
+.searchbox .col-md-6, .searchbox .col-md-3 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.searchbox .form-control {
+  border-color: transparent;
+  border-right: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.searchbox select.form-control {
+  border-right: solid 1px transparent;
+}
+
+.searchbox .form-control:focus {
+  outline: 0;
+}
+
+.searchbox .btn {
+  border-radius: 40px;
+  padding: 20px 40px;
+}
+
+.btn-hero .btn {
+  padding: 28px 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
