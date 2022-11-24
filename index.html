@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./csss/style.css">
 </head>
 <!-- header-area -->
@@ -18,11 +19,10 @@
     <div class="container">
         <div class="row">
             <header
-                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 ">
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-4 ">
                 <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
                     <img src="./assets/img/Logo.png" alt="">
                 </a>
-
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="#" class="nav-link px-4 link-secondary">find a trip</a></li>
                     <li><a href="#" class="nav-link px-4 link-dark">destinations</a></li>
@@ -44,27 +44,32 @@
         <div class="row">
             <div class="text-secondary px-4 py-5 text-center">
                 <div class="py-5">
-                    <h1 class="fw-bold text-white">Exploring The World In Comfort.</h1>
+                    <h1 class="fw-bold text-white">Exploring The World <br> In Comfort.</h1>
                     <div class="col-lg-8 mx-auto">
-                        <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap,
-                            the world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
-                            responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <p class="mb-4">You do not have the right to remain silent… let us know what it <br> takes to challenge you.</p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-content-center">
                             <section id="hero">
                                 <div class="container">
                                     <div class="searchwrapper">
                                         <div class="searchbox">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <div class="search-area d-flex justify-content-between align-items-center">
-                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                    <div class="search-area d-flex justify-content-between align-items-center ps-2">
+                                                        <img src="./assets/icon/search.png" alt="src" class="pe-2">
+
                                                         <input type="text" class="form-control"
-                                                        placeholder="Search by Keywords...">
+                                                        placeholder="Search destination">
                                                     </div>                                               
                                                 </div>
-                                                <div class="col-md-3"><input type="text" class="form-control"
-                                                        placeholder="Location"></div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 pe-2">
+                                                    <div class="location-area d-flex justify-content-between align-items-center ps-2">
+                                                        <img src="./assets/icon/location.png" alt="rrrr" class="pe-2">
+
+                                                        <input type="text" class="form-control"
+                                                            placeholder="C.Location">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 ps-2">
                                                     <div class="select-2 text-muted">
                                                         <select class="form-select form-select-lg text-muted"
                                                         aria-label=".form-select-lg example">

@@ -52,9 +52,9 @@ textarea:focus {
     .btn {
         height: 59px;
         width: 152px;
-        border: 1px solid#fff;
+        border: 2px solid#fff;
         color: #FFFFFF;
-        border-color: #777F96;
+        border-color: 2px solid#777F96;
         font-size: 14px;
         font-weight: 400;
         line-height: 19px;
@@ -62,6 +62,7 @@ textarea:focus {
 
 }
 
+// hero-area
 
 .hero-area {
     background-image: url(../assets/img/cover-img.jpg);
@@ -76,6 +77,18 @@ textarea:focus {
 
 .hero-area--1 {
     padding: 160px 0px 160px;
+
+    h1 {
+      font-size: 62px;
+      line-height: 78px;
+    }
+
+    p {
+      color: #fff;
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 500;
+    }
 
     
     
