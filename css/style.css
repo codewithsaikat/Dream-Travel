@@ -39,9 +39,8 @@ textarea:focus {
 .header-area .btn {
   height: 59px;
   width: 152px;
-  border: 2px solid #fff;
-  color: #FFFFFF;
-  border-color: 2px solid #777F96;
+  border: 1px solid #777F96;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
@@ -58,21 +57,28 @@ textarea:focus {
 }
 
 .hero-area--1 {
-  padding: 160px 0px 160px;
+  padding: 160px 0px 145px;
 }
 .hero-area--1 h1 {
   font-size: 62px;
   line-height: 78px;
+  margin-bottom: 35px;
 }
 .hero-area--1 p {
   color: #fff;
   font-size: 18px;
   line-height: 28px;
   font-weight: 500;
+  padding-bottom: 55px;
+}
+.hero-area--1 .searchbox .col-md-5,
+.hero-area--1 .searchbox .col-md-3,
+.hero-area--1 .searchbox .col-md-4 {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 #hero .select-2 .form-select {
-  position: relative;
   border: none;
   font-size: 1rem;
 }
@@ -80,10 +86,8 @@ textarea:focus {
   border: none;
   padding-left: none;
   font-size: 1rem;
-  position: relative;
 }
 #hero .select-2 .form-select .form-select-lg option {
-  position: absolute;
   top: 30px;
 }
 
@@ -93,15 +97,21 @@ textarea:focus {
 
 .searchbox {
   background-color: #fff;
-  padding: 10px 40px 10px 40px;
+  padding: 5px 40px 5px 40px;
   border-radius: 0.25rem;
+}
+.searchbox .form-control {
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .searchbox [class*=col-] {
   padding: 0px;
 }
 
-.searchbox .col-md-6, .searchbox .col-md-3 {
+.searchbox .col-md-5,
+.searchbox .col-md-3,
+.searchbox .col-md-4 {
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -125,7 +135,58 @@ textarea:focus {
 }
 
 .btn-hero .btn {
-  padding: 28px 50px;
+  padding: 24px 50px;
+}
+
+.feature-cards {
+  padding: 140px 0px 96px;
+  background-color: #f8f8f8;
+}
+.feature-cards .feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 54px;
+  font-size: 0rem;
+  color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 15px 35px hsla(0deg, 0%, 0%, 0.2);
+}
+.feature-cards .gap {
+  gap: 40px 40px;
+}
+.feature-cards .feature {
+  flex: 30%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
+}
+.feature-cards .pdn {
+  padding: 101px 100px 81px;
+}
+.feature-cards h2 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 58px;
+  color: #1E2A39;
+  padding-bottom: 3px;
+}
+.feature-cards p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #5C6272;
+  border-color: #707070;
+  margin-bottom: 0px;
+}
+.feature-cards h5 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1E2A39;
+  line-height: 35px;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
