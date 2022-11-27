@@ -204,6 +204,7 @@ textarea:focus {
     color: #fff;
     border-radius: 0.75rem;
     box-shadow: 0 15px 35px hsla(0, 0%, 0%, .2);
+    
   }
 
   .gap {
@@ -355,13 +356,14 @@ textarea:focus {
     top: 50%;
   }
 
-  .flip-box-header {
-    font-size: 34px;
-  }
+ 
 
   .flip-box p {
-    font-size: 20px;
-    line-height: 1.5em;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #5C6272;
+    
   }
 
   .flip-box-img {
@@ -394,12 +396,22 @@ textarea:focus {
   border-radius: 10px;
 
   .gap {
-    gap: 30px 30px;
+    gap: 30px 33px;
   }
   .tour-section {
     background-color: #fff;
     flex: 15%;
     border-radius: 10px;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+    transition: transform 0.5s;
+      
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+      .tour-img {
+        opacity: 1;
+      }
+    }
 
     .tour-country {
       padding: 15px 5px 15px;
@@ -453,6 +465,22 @@ textarea:focus {
     font-weight: 600;
     line-height: 16px;
     color: #EE6D52;
+  }
+
+  h2 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 58px;
+    color: #1E2A39;
+    margin-bottom: 13px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #5C6272;
+    margin-bottom: 80px;
   }
 
 }
