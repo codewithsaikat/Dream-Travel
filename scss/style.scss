@@ -9,6 +9,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8;
 
 }
 
@@ -191,7 +192,7 @@ textarea:focus {
 
 .feature-cards {
   padding: 140px 0px 96px;
-  background-color: #f8f8f8;
+
 
   .feature-icon {
     display: inline-flex;
@@ -203,8 +204,9 @@ textarea:focus {
     font-size: 0rem;
     color: #fff;
     border-radius: 0.75rem;
-    box-shadow: 0 15px 35px hsla(0, 0%, 0%, .2);
-    
+    // box-shadow: 0 15px 35px hsla(0, 0%, 0%, .2);
+    box-shadow: 0 5px 15px hsla(0, 0%, 0%, .2);
+
   }
 
   .gap {
@@ -216,6 +218,7 @@ textarea:focus {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px hsla(0, 0%, 0%, .2);
+    background-color: #fff;
   }
 
   .pdn {
@@ -248,11 +251,9 @@ textarea:focus {
 
   }
 
-
-
-
   .box-container {
     gap: 40px 40px;
+
   }
 
   *,
@@ -356,14 +357,14 @@ textarea:focus {
     top: 50%;
   }
 
- 
+
 
   .flip-box p {
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
     color: #5C6272;
-    
+
   }
 
   .flip-box-img {
@@ -396,18 +397,20 @@ textarea:focus {
   border-radius: 10px;
 
   .gap {
-    gap: 30px 33px;
+    gap: 33px 33px;
   }
+
   .tour-section {
     background-color: #fff;
     flex: 15%;
     border-radius: 10px;
-    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     transition: transform 0.5s;
-      
+
     &:hover {
       transform: scale(1.1);
       cursor: pointer;
+
       .tour-img {
         opacity: 1;
       }
@@ -417,12 +420,13 @@ textarea:focus {
       padding: 15px 5px 15px;
 
       .tour-img {
-          img {
-           
-            height: 263px;
-            width: 100%;
-          }
+        img {
+          height: 263px;
+          width: 100%;
+        }
+
         position: relative;
+
         &::after {
           content: "";
           position: absolute;
@@ -437,7 +441,9 @@ textarea:focus {
         }
       }
     }
+
   }
+
   .tour-svg {
     img {
 
@@ -445,21 +451,12 @@ textarea:focus {
     }
   }
 
-  h5 {
-    margin-top: 27px;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 24px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 16px;
-    color: #1E2A39;
-  }
   .tour-text {
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
   }
+
   .tour-top-right {
     font-size: 16px;
     font-weight: 600;
@@ -483,4 +480,62 @@ textarea:focus {
     margin-bottom: 80px;
   }
 
+
+  h5 {
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 23px;
+    color: #1E2A39;
+    margin-bottom: 15px;
+    margin-top: 27px;
+  }
+
 }
+
+// logo-partner
+
+.logo-section {
+
+  padding: 80px 150px 140px;
+
+  h2 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 58px;
+    color: #1E2A39;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #5C6272;
+    margin-bottom: 90px;
+  }
+
+  .logo-img {
+    transform: translatey(0px);
+	  animation: float 3s ease-in-out infinite;
+  
+    gap: 30px 10px;
+      div {
+        flex: 20%;
+      }
+  
+    }
+   
+  
+  }
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }

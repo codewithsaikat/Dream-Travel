@@ -7,6 +7,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
+  background-color: #f8f8f8;
 }
 
 a {
@@ -138,7 +139,6 @@ textarea:focus {
 
 .feature-cards {
   padding: 140px 0px 96px;
-  background-color: #f8f8f8;
 }
 .feature-cards .feature-icon {
   display: inline-flex;
@@ -150,7 +150,7 @@ textarea:focus {
   font-size: 0rem;
   color: #fff;
   border-radius: 0.75rem;
-  box-shadow: 0 15px 35px hsla(0deg, 0%, 0%, 0.2);
+  box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
 }
 .feature-cards .gap {
   gap: 40px 40px;
@@ -160,6 +160,7 @@ textarea:focus {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
+  background-color: #fff;
 }
 .feature-cards .pdn {
   padding: 101px 100px 81px;
@@ -304,7 +305,7 @@ textarea:focus {
   border-radius: 10px;
 }
 .tour-place .gap {
-  gap: 30px 33px;
+  gap: 33px 33px;
 }
 .tour-place .tour-section {
   background-color: #fff;
@@ -344,16 +345,6 @@ textarea:focus {
 .tour-place .tour-svg img {
   margin-top: -5px;
 }
-.tour-place h5 {
-  margin-top: 27px;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 24px;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 16px;
-  color: #1E2A39;
-}
 .tour-place .tour-text {
   font-size: 16px;
   font-weight: 500;
@@ -378,6 +369,52 @@ textarea:focus {
   line-height: 28px;
   color: #5C6272;
   margin-bottom: 80px;
+}
+.tour-place h5 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 23px;
+  color: #1E2A39;
+  margin-bottom: 15px;
+  margin-top: 27px;
+}
+
+.logo-section {
+  padding: 80px 150px 140px;
+}
+.logo-section h2 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 58px;
+  color: #1E2A39;
+  margin-bottom: 10px;
+}
+.logo-section p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #5C6272;
+  margin-bottom: 90px;
+}
+.logo-section .logo-img {
+  transform: translatey(0px);
+  animation: float 3s ease-in-out infinite;
+  gap: 30px 10px;
+}
+.logo-section .logo-img div {
+  flex: 20%;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
