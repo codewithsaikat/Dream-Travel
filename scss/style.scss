@@ -517,30 +517,184 @@ textarea:focus {
 
   .logo-img {
     transform: translatey(0px);
-	  animation: float 3s ease-in-out infinite;
-  
+    animation: float 3s ease-in-out infinite;
+
     gap: 30px 10px;
-      div {
-        flex: 20%;
-      }
-  
+
+    div {
+      flex: 20%;
     }
-   
-  
-  }
-  @keyframes float {
-    0% {
-      transform: translatey(0px);
-    }
-    50% {
-      transform: translatey(-20px);
-    }
-    100% {
-      transform: translatey(0px);
-    }
+
   }
 
-  // card-carousel
+
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+// card-carousel
+
+.card-carousel {
+
+  background-color: #f8f8f8;
+  padding: 20px 100px;
+
+  .mg-l {
+    margin-left: 10px;
+  }
+  span {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #4141A5;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+    margin-bottom: 13px;
+  }
+  p {
+    color: #5C6272;
+    font-size: 16px;
+    font-weight:400;
+    line-height: 28px;
+    width: 70%;
+  }
+}
+
+
+
+.card-list {
+  margin-top: 50px;
+  position:relative;
+}
+
+.single-team-item {
+  
+ 
+  // padding: 40px;
+  margin: 20px;
+  text-align: center;
+  height: 495px;
+  width: 365px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
 
   
-  
+}
+
+
+
+
+
+
+.slick-prev:before,
+.slick-next:before {
+    color: #0f0f0f;
+}
+
+.slick-dots li button:before {
+    color: #d8d8d8;
+    font-size: 40px;
+    opacity: .75
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 100;
+    color: #0bbbc1;
+    font-size: 40px;
+}
+
+.slick-prev {
+  position: absolute;
+  top: -41px;
+  left: 1085px;
+  z-index: 999;
+    
+
+}
+
+.slick-next {
+  position: absolute;
+    right: 3%;
+    position: absolute;
+    top: -41px;
+}
+
+
+
+
+
+/*****our team web slider****/
+
+.section-bg-2 {
+    background-image: url(../img/testimonial-bg.jpg);
+}
+
+.testimonial-list {
+    margin-top: 70px;
+}
+
+.team h2 {
+    color: #fff;
+
+}
+
+.team p {
+    color: #fff;
+    font-size: 14px
+}
+
+.single-testimonial-item {
+    background: #fff;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Zilla Slab', serif;
+    font-style: italic;
+}
+
+.testimonial-icon {
+    font-size: 25px;
+    color: #0bbbc1;
+    margin-bottom: 10px;
+}
+
+.single-testimonial-item h5 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 14px
+}
+
+.single-testimonial-item h5 span {
+    display: block;
+    font-weight: normal;
+
+}
+
+.single-testimonial-item h5 span {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    color: #605e5e;
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 5px;
+}
