@@ -549,7 +549,7 @@ textarea:focus {
 .card-carousel {
 
   background-color: #f8f8f8;
-  padding: 20px 100px;
+  padding: 20px 108px;
 
   .mg-l {
     margin-left: 10px;
@@ -694,7 +694,7 @@ textarea:focus {
 
 
 
-/*****our team web slider****/
+/*****testimonial-carousel****/
 
 .container {
   margin-right: 0px;
@@ -703,7 +703,7 @@ textarea:focus {
   .row {
     margin-right: 0px;
     .col-md-12 {
-      margin-left: 60px;
+      margin-left: 20px;
     }
   }
 }
@@ -725,6 +725,10 @@ textarea:focus {
     background: #fff;
     margin: 20px;
     text-align: center;
+    height: 351px;
+    width: 310px;
+    min-height: 310px;
+    // max-width: 310px;
     padding: 10px;
     color: #000;
     font-size: 16px;

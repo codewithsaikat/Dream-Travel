@@ -55,7 +55,7 @@ $(document).ready(function (){
 
     $('.testimonial-list').slick({
         autoplay: false,
-        infinite: true,
+        infinite: true,  
         slidesToShow: 4,
         slidesToScroll: 3,
          dots: true,
@@ -63,7 +63,7 @@ $(document).ready(function (){
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 2,
               slidesToScroll: 2,
               infinite: true,
               dots: true
