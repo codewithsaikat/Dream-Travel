@@ -4,7 +4,7 @@
 $(document).ready(function (){
     
     $('.card-list').slick({
-        autoplay: false,
+        // autoplay: true,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,

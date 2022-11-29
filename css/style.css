@@ -444,7 +444,7 @@ textarea:focus {
 }
 
 .card-list {
-  margin-top: 50px;
+  margin-top: 48px;
   position: relative;
 }
 
@@ -457,6 +457,21 @@ textarea:focus {
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: contain;
+  position: relative;
+}
+.single-team-item .btn {
+  height: 51px;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  border-radius: 26px;
+  left: 35px;
+  top: 35px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
 }
 
 .slick-prev:before,
@@ -476,18 +491,39 @@ textarea:focus {
   font-size: 40px;
 }
 
+.slick-dots {
+  bottom: -5px;
+}
+
 .slick-prev {
   position: absolute;
-  top: -41px;
-  left: 1085px;
+  position: absolute;
+  top: -75px;
+  left: 1009px;
   z-index: 999;
+  background-color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  border-radius: 2px solid #333;
 }
 
 .slick-next {
   position: absolute;
-  right: 3%;
-  position: absolute;
-  top: -41px;
+  top: -75px;
+  right: 34px;
+  z-index: 999;
+  background-color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  border-radius: 2px solid #333;
 }
 
 /*****our team web slider****/
