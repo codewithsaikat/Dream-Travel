@@ -473,6 +473,26 @@ textarea:focus {
   font-weight: 600;
   line-height: 20px;
 }
+.single-team-item h3 {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 34px;
+  position: absolute;
+  bottom: 54px;
+  left: 30px;
+  display: block;
+}
+.single-team-item p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  left: -27px;
+  position: absolute;
+  bottom: 19px;
+  display: block;
+}
 
 .slick-prev:before,
 .slick-next:before {
@@ -527,8 +547,15 @@ textarea:focus {
 }
 
 /*****our team web slider****/
-.section-bg-2 {
-  background-image: url(../img/testimonial-bg.jpg);
+.container {
+  margin-right: 0px;
+  padding-right: 0px;
+}
+.container .row {
+  margin-right: 0px;
+}
+.container .row .col-md-12 {
+  margin-left: 60px;
 }
 
 .testimonial-list {
