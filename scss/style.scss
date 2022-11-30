@@ -705,7 +705,8 @@ textarea:focus {
 
 .testimonial {
 
-  padding: 60px 100px;
+  padding: 60px 102px;
+ 
 
   .mg-l {
     margin-left: 5px;
@@ -732,10 +733,10 @@ textarea:focus {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-    width: 70%;
+    width: 60%;
   }
 
-
+}
 
   .testimonial-list {
 
@@ -744,53 +745,64 @@ textarea:focus {
     
 
     .single-testimonial-item {
-      background: rgb(255, 255, 255);
-      margin: 20px;
+      background: rgb(255, 255, 255);   
       text-align: center;
-      height: 353px;
-      width: 300px;    
-      flex: 15%;
-      color: #000;    
-     
-      position: relative;
-      margin-top: 30px;
+      margin: 0px 15px;
+      height: 352px;
+      width: 300px;
+      min-width: 300px;    
+      flex: 20%;    
+      margin-top: 70px;
       border-radius: 10px;
       .img-round {
 
-        img{
-          position: absolute;
-          height: 50px;
-          width: 50px;
-          left: 40%;
-          top: -23px;
-          
-
+        img{          
+          height: 75px;
+          width: 75px;
+          margin-top: -30px;
+          margin-bottom: 38px;
         }
         
       }
-
       h5 {
-        position: absolute;
+        
         font-size: 20px;
         line-height: 24px;
         font-weight: 600;
-        top: 40px;
-      }
-      p {
-        // position: absolute;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 14px;
-        top: 80px;
         
-
       }
-      hr {
-            margin-top: 132px;
-      }
-      
+     
   
-    }
+      .text-center {
+        width: 100%;
+        font-size: 14px;
+        line-height: 14px;
+        margin-bottom: 27px;
+      }
+
+      .thin-line {
+         
+        height: 1px;
+        width: 80%;
+        background-color: #ebe5fc;
+        margin: auto;
+      }  
+      
+      .text-ico {
+        margin-top: 21px;
+        margin-left: 30px;
+      }
+
+      .text-start {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        width: 91%;
+        margin-top: 10px;
+        margin-bottom: 25px;
+      }
+  
+   }
 
 
 
@@ -804,6 +816,14 @@ textarea:focus {
       font-size: 40px;
       opacity: .75
     }
+
+    .slick-list {
+      overflow: auto;
+      margin-right: -115px;
+      overflow-x: hidden;
+      margin-left: -39px;
+  }
+  
     
     .slick-dots li.slick-active button:before {
       opacity: 100;
@@ -812,8 +832,10 @@ textarea:focus {
     }
     
     .slick-dots {
-      bottom: -5px;
-    }
+      bottom: -39px;
+      left: 40px;
+  }
+    
     
     
     .slick-prev {
@@ -850,7 +872,7 @@ textarea:focus {
 
   }
 
-}
+
   
 
 
