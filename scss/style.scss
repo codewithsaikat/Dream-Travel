@@ -554,22 +554,25 @@ textarea:focus {
   .mg-l {
     margin-left: 10px;
   }
+
   span {
     font-size: 16px;
     font-weight: 600;
     line-height: 25px;
     color: #4141A5;
   }
+
   h2 {
     font-size: 40px;
     line-height: 52px;
     font-weight: 700;
     margin-bottom: 13px;
   }
+
   p {
     color: #5C6272;
     font-size: 16px;
-    font-weight:400;
+    font-weight: 400;
     line-height: 28px;
     width: 70%;
   }
@@ -579,12 +582,12 @@ textarea:focus {
 
 .card-list {
   margin-top: 48px;
-  position:relative;
+  position: relative;
 }
 
 .single-team-item {
-  
- 
+
+
   margin: 20px;
   text-align: center;
   height: 495px;
@@ -596,7 +599,7 @@ textarea:focus {
   position: relative;
 
   .btn {
-    
+
     height: 51px;
     width: 40%;
     background-color: rgba(255, 255, 255, 0.3);
@@ -610,47 +613,48 @@ textarea:focus {
     font-weight: 600;
     line-height: 20px;
   }
-   
-    h3 {
-      color: #fff;
-      font-size: 34px;
-      font-weight: 700;
-      line-height: 34px;
-      position: absolute;
-      bottom: 54px;
-      left: 30px;
-      display:block;
-    }
-    p{
-      color: #fff;
-      font-size: 16px;
-      line-height: 16px;
-      font-weight: 500;
-      left: -27px;
-      position: absolute;
-      bottom: 19px;
-      display:block;
-    }
+
+  h3 {
+    color: #fff;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 34px;
+    position: absolute;
+    bottom: 54px;
+    left: 30px;
+    display: block;
+  }
+
+  p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    left: -27px;
+    position: absolute;
+    bottom: 19px;
+    display: block;
+  }
 }
-  
+
 
 
 
 .slick-prev:before,
 .slick-next:before {
-    color: #0f0f0f;
+  color: #0f0f0f;
 }
 
 .slick-dots li button:before {
-    color: #d8d8d8;
-    font-size: 40px;
-    opacity: .75
+  color: #d8d8d8;
+  font-size: 40px;
+  opacity: .75
 }
 
 .slick-dots li.slick-active button:before {
-    opacity: 100;
-    color: #0bbbc1;
-    font-size: 40px;
+  opacity: 100;
+  color: #0bbbc1;
+  font-size: 40px;
 }
 
 .slick-dots {
@@ -676,17 +680,17 @@ textarea:focus {
 
 .slick-next {
   position: absolute;
-    top: -75px;
-    right: 34px;
-    z-index: 999;
-    background-color: #fff;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  top: -75px;
+  right: 34px;
+  z-index: 999;
+  background-color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-    outline: none;
-    border-radius: 2px solid #333;
+  outline: none;
+  border-radius: 2px solid #333;
 }
 
 
@@ -695,31 +699,39 @@ textarea:focus {
 
 /*****testimonial-carousel****/
 
-.container {
-  
+.testimonial {
 
-  .row {
-   
-    .col-md-12 {
-      
-    }
+  padding: 60px 108px;
+
+  .mg-l {
+    margin-left: 5px;
   }
-}
-.testimonial-list {
-    margin-top: 70px;
-}
 
-.team h2 {
-    color: #fff;
+  span {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #4141A5;
+  }
 
-}
+  h2 {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    color: #1E2A39;
+  }
 
-.team p {
-    color: #fff;
-    font-size: 14px
-}
+  p {
+    color: #5C6272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    width: 70%;
+  }
 
-.single-testimonial-item {
+
+  .single-testimonial-item {
     background: #fff;
     margin: 20px;
     text-align: center;
@@ -733,32 +745,8 @@ textarea:focus {
     font-weight: 700;
     font-family: 'Zilla Slab', serif;
     font-style: italic;
-}
-
-.testimonial-icon {
-    font-size: 25px;
-    color: #0bbbc1;
-    margin-bottom: 10px;
-}
-
-.single-testimonial-item h5 {
-    margin-top: 25px;
-    margin-bottom: 10px;
-    font-size: 14px
-}
-
-.single-testimonial-item h5 span {
-    display: block;
-    font-weight: normal;
+  }
 
 }
 
-.single-testimonial-item h5 span {
-    display: block;
-    font-weight: normal;
-    font-size: 12px;
-    color: #605e5e;
-    font-family: 'Noto Sans', sans-serif;
-    margin-top: 5px;
-}
-
+  

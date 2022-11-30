@@ -547,20 +547,33 @@ textarea:focus {
 }
 
 /*****testimonial-carousel****/
-.testimonial-list {
-  margin-top: 70px;
+.testimonial {
+  padding: 60px 108px;
 }
-
-.team h2 {
-  color: #fff;
+.testimonial .mg-l {
+  margin-left: 5px;
 }
-
-.team p {
-  color: #fff;
-  font-size: 14px;
+.testimonial span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #4141A5;
 }
-
-.single-testimonial-item {
+.testimonial h2 {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  margin-bottom: 13px;
+  color: #1E2A39;
+}
+.testimonial p {
+  color: #5C6272;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  width: 70%;
+}
+.testimonial .single-testimonial-item {
   background: #fff;
   margin: 20px;
   text-align: center;
@@ -573,32 +586,6 @@ textarea:focus {
   font-weight: 700;
   font-family: "Zilla Slab", serif;
   font-style: italic;
-}
-
-.testimonial-icon {
-  font-size: 25px;
-  color: #0bbbc1;
-  margin-bottom: 10px;
-}
-
-.single-testimonial-item h5 {
-  margin-top: 25px;
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.single-testimonial-item h5 span {
-  display: block;
-  font-weight: normal;
-}
-
-.single-testimonial-item h5 span {
-  display: block;
-  font-weight: normal;
-  font-size: 12px;
-  color: #605e5e;
-  font-family: "Noto Sans", sans-serif;
-  margin-top: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
