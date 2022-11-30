@@ -567,6 +567,7 @@ textarea:focus {
     line-height: 52px;
     font-weight: 700;
     margin-bottom: 13px;
+    margin-top: 10px;
   }
 
   p {
@@ -635,6 +636,9 @@ textarea:focus {
     bottom: 19px;
     display: block;
   }
+
+
+
 }
 
 
@@ -701,7 +705,7 @@ textarea:focus {
 
 .testimonial {
 
-  padding: 60px 108px;
+  padding: 60px 100px;
 
   .mg-l {
     margin-left: 5px;
@@ -720,6 +724,7 @@ textarea:focus {
     font-weight: 700;
     margin-bottom: 13px;
     color: #1E2A39;
+    margin-top: 10px;
   }
 
   p {
@@ -731,22 +736,122 @@ textarea:focus {
   }
 
 
-  .single-testimonial-item {
-    background: #fff;
-    margin: 20px;
-    text-align: center;
-    height: 351px;
-    width: 310px;
-    min-height: 310px;
-    // max-width: 310px;
-    padding: 10px;
-    color: #000;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: 'Zilla Slab', serif;
-    font-style: italic;
+
+  .testimonial-list {
+
+    margin-top: 40px;
+    gap: 30px 30px;
+    
+
+    .single-testimonial-item {
+      background: rgb(255, 255, 255);
+      margin: 20px;
+      text-align: center;
+      height: 353px;
+      width: 300px;    
+      flex: 15%;
+      color: #000;    
+     
+      position: relative;
+      margin-top: 30px;
+      border-radius: 10px;
+      .img-round {
+
+        img{
+          position: absolute;
+          height: 50px;
+          width: 50px;
+          left: 40%;
+          top: -23px;
+          
+
+        }
+        
+      }
+
+      h5 {
+        position: absolute;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+        top: 40px;
+      }
+      p {
+        // position: absolute;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        top: 80px;
+        
+
+      }
+      hr {
+            margin-top: 132px;
+      }
+      
+  
+    }
+
+
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: #0f0f0f;
+    }
+    
+    .slick-dots li button:before {
+      color: #d8d8d8;
+      font-size: 40px;
+      opacity: .75
+    }
+    
+    .slick-dots li.slick-active button:before {
+      opacity: 100;
+      color: #0bbbc1;
+      font-size: 40px;
+    }
+    
+    .slick-dots {
+      bottom: -5px;
+    }
+    
+    
+    .slick-prev {
+      position: absolute;
+      position: absolute;
+      top: -75px;
+      left: 1009px;
+      z-index: 999;
+      background-color: #fff;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      outline: none;
+      border-radius: 2px solid #333;
+    }
+    
+    .slick-next {
+      position: absolute;
+      top: -75px;
+      right: 34px;
+      z-index: 999;
+      background-color: #fff;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      outline: none;
+      border-radius: 2px solid #333;
+    }
+  
+
   }
 
 }
+  
+
 
   
