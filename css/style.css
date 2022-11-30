@@ -547,17 +547,6 @@ textarea:focus {
 }
 
 /*****testimonial-carousel****/
-.container {
-  margin-right: 0px;
-  padding-right: 0px;
-}
-.container .row {
-  margin-right: 0px;
-}
-.container .row .col-md-12 {
-  margin-left: 20px;
-}
-
 .testimonial-list {
   margin-top: 70px;
 }
