@@ -398,7 +398,6 @@ textarea:focus {
 }
 .logo-section .logo-img {
   transform: translatey(0px);
-  animation: float 3s ease-in-out infinite;
   gap: 30px 10px;
 }
 .logo-section .logo-img div {
@@ -550,6 +549,7 @@ textarea:focus {
 /*****testimonial-carousel****/
 .testimonial {
   padding: 60px 102px;
+  padding-bottom: 294px;
 }
 .testimonial .mg-l {
   margin-left: 5px;
@@ -678,6 +678,78 @@ textarea:focus {
   cursor: pointer;
   outline: none;
   border-radius: 2px solid #333;
+}
+
+.footer .site-section {
+  background-color: #0d0d0e;
+  position: relative;
+  padding: 226px 0px 100px;
+}
+.footer .site-section .text {
+  color: #fff;
+}
+.footer .site-section h5 {
+  color: #fff;
+}
+.footer .site-section .logo-text {
+  margin-top: 20px;
+}
+.footer .site-section .hd {
+  width: 70%;
+}
+.footer .site-section .cta-box {
+  background-image: url(../assets/img/footer-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -115px;
+  padding: 55px 80px;
+  border-radius: 10px;
+  gap: 0px 202px;
+}
+.footer .site-section .cta-box .text-box {
+  flex: 47%;
+}
+.footer .site-section .cta-box h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #fff;
+}
+.footer .site-section .cta-box p {
+  font-size: 16px;
+  color: #fff;
+  width: 70%;
+  font-weight: 400;
+  width: 75%;
+}
+.footer .site-section .cta-box .subscribe {
+  flex: 70%;
+}
+.footer .site-section .cta-box .subscribe .subscribe-form {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.footer .site-section .cta-box .subscribe .subscribe-form input[type=text] {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  color: rgba(0, 0, 0, 0.3) !important;
+  font-size: 16px;
+  height: 56px;
+  border-radius: 0;
+}
+.footer .site-section .cta-box .subscribe .subscribe-form input[type=submit] {
+  color: #fff !important;
+  display: block;
+  width: 150px;
+  height: 56px;
+  font-size: 14px;
+  background: #0F415C !important;
+  border: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
