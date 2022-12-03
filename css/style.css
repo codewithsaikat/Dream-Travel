@@ -77,7 +77,10 @@ textarea:focus {
   padding-bottom: 12px;
 }
 
-.js-source-states {
+.select-2 {
+  margin: 0;
+}
+.select-2 .js-source-states {
   border: none;
   width: 100%;
   outline: none;

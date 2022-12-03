@@ -102,16 +102,21 @@ textarea:focus {
 
 //   form-select
 
-.js-source-states {
-  border: none;
-  width: 100%;
-  outline: none;
-
-  // optgroup {
-  //   margin-top: 200px;
-  // }
+.select-2 {
   
+  margin: 0;
+ 
+
+  .js-source-states {
+    border: none;
+    width: 100%;
+    outline: none;
+  
+    
+    
+  }
 }
+
 
 
 
