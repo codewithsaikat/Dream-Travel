@@ -89,6 +89,25 @@ $(document).ready(function (){
 
 });
 
+// let config3 = {
+//   type: 'carousel',
+//   perView: 2,
+//   // autoplay:2500,
+//   animationDuration: 600,
+//   animationTimingFunc: 'linear',
+//   breakpoints: {
+//       767: {
+//           perView: 1
+//       },
+//       992: {
+//           perView: 2
+//       }
+//   }
+// };
+
+// new Glide('.about-slider', config3).mount();
+
+
 let config3 = {
   type: 'carousel',
   perView: 2,
@@ -105,7 +124,8 @@ let config3 = {
   }
 };
 
-new Glide('.about-slider', config3).mount();
+new Glide('._about_slider', config3).mount();
+
 
 
 // select-2

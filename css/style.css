@@ -411,18 +411,28 @@ textarea:focus {
     transform: translatey(0px);
   }
 }
-.slider-1 {
-  padding: 100px 0px 100px;
+/*---=== ABOUT US ===---*/
+._abt_drm_trvl_sec {
+  padding: 70px 0px 70px;
+  background: #0bbbc1;
   overflow: hidden;
 }
-.slider-1 .slider-top {
+
+._about_slider {
+  position: relative;
+}
+
+._abt_drm_trvl_top {
   display: flex;
+  align-items: center;
   margin-bottom: 80px;
 }
-.slider-1 .slider-top-left {
+
+._abt_drm_trvl_top_lft {
   width: 38%;
 }
-.slider-1 .slider-top-left-p {
+
+._abt_drm_trvl_top_lft_p {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -432,18 +442,23 @@ textarea:focus {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.slider-1 h1 {
+
+._abt_drm_trvl_top_lft_h1 {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
 }
-.slider-1 .slider-top-right {
+
+._abt_drm_trvl_top_r8 {
   padding-left: 170px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1;
   flex: 1 1;
 }
-.slider-1 .slider-top-right-p {
+
+._abt_drm_trvl_top_r8_p {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -451,37 +466,32 @@ textarea:focus {
   line-height: 28px;
 }
 
-.about-slider {
-  position: relative;
-}
-.about-slider .card-all {
+._abt_drm_trvl_crd_all {
   display: flex;
   position: relative;
 }
-.about-slider .card-all .travel-card-active {
-  box-shadow: 0px 60px 140px -16px rgba(37, 45, 61, 0.06);
-}
-.about-slider .card-all .travel-card {
-  width: 643px;
-  margin-right: 5px;
+
+._abt_drm_trvl_crd {
+  width: 540px;
   border-radius: 12px;
   overflow: hidden;
+  margin-right: 35px;
   display: block;
   flex: 0 0 auto;
 }
-.about-slider .card-all .travel-card .travel-card--top {
+
+._abt_drm_trvl_crd_top {
   position: relative;
   height: 300px;
   z-index: 0;
   border-radius: 12px;
 }
-.about-slider .card-all .travel-card .travel-card--top img {
-  width: 100%;
-  display: block;
-  height: 100%;
-  object-fit: cover;
+
+._abt_drm_trvl_crd_top img {
+  border-radius: 12px;
 }
-.about-slider .card-all .travel-card .travel-card--top::after {
+
+._abt_drm_trvl_crd_top:after {
   position: absolute;
   content: "";
   top: 0;
@@ -492,65 +502,122 @@ textarea:focus {
   background: linear-gradient(105.72deg, rgba(13, 9, 45, 0.4) 0.53%, rgba(15, 11, 44, 0) 94.3%, rgba(15, 11, 44, 0.1) 100%);
   border-radius: 12px;
 }
-.about-slider .card-all .travel-card .travel-card--bottom {
-  display: block;
+
+._abt_drm_trvl_crd_btm {
   padding: 0px 40px 40px 44px;
   z-index: 2;
-  background: #fff;
+  background: var(--bg1);
   display: none;
 }
-.about-slider .card-all .travel-card .travel-card--bottom .travel-card--icon {
+
+/*._abt_drm_trvl_crd_all ._active ._abt_drm_trvl_crd_btm{
+  display: block;
+}*/
+._abt_drm_trvl_crd_all ._active {
+  -webkit-box-shadow: 0px 60px 140px -16px rgba(37, 45, 61, 0.06);
+  box-shadow: 0px 60px 140px -16px rgba(37, 45, 61, 0.06);
+}
+
+._abt_drm_trvl_crd_all ._active ._abt_drm_trvl_crd_top {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+._abt_drm_trvl_crd_all ._active ._abt_drm_trvl_crd_top img {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+._abt_drm_trvl_crd_btm_icon {
   width: 88px;
   height: 88px;
   border-radius: 50%;
-  background: #fff;
+  -webkit-box-shadow: 0px 50px 60px -10px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 50px 60px -10px rgba(0, 0, 0, 0.08);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   position: relative;
   top: -45px;
 }
-.about-slider .card-all .travel-card h2 {
+
+._abt_drm_trvl_crd_btm_icon svg path {
+  fill: #000;
+}
+
+._abt_drm_trvl_crd_h2 {
+  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
   line-height: 45px;
   margin-bottom: 12px;
-  color: rgb(10, 9, 9);
 }
-.about-slider .card-all .travel-card p {
+
+._abt_drm_trvl_crd_txt {
+  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
-  color: #777F96;
 }
-.about-slider .travel-card-arrow {
+
+._abt_drm_trvl_crd_arow {
   position: absolute;
   right: 24%;
   bottom: 16%;
+  -webkit-transform: translateX(-26%);
+  -ms-transform: translateX(-26%);
   transform: translateX(-26%);
 }
-.about-slider .glide-arrows {
+
+._abt_drm_trvl_crd_arow_ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
-.about-slider .glide-arrows .glide-arrow-left {
-  padding: 22px;
-  border: 1px solid #fff;
+
+._abt_drm_trvl_crd_arow_ul li {
   width: 61px;
   height: 61px;
-  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0px 10px;
   border-radius: 50%;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s all ease;
 }
-.about-slider .glide-arrows .glide-arrow-right {
+
+._abt_drm_trvl_crd_arow_ul li:hover {
+  -webkit-box-shadow: 0px 25px 40px rgba(59, 80, 90, 0.05);
+  box-shadow: 0px 25px 40px rgba(59, 80, 90, 0.05);
+}
+
+._abt_drm_trvl_crd_arow_ul li svg path {
+  fill: #152137;
+}
+
+._abt_drm_trvl_crd_arow .glide__arrows {
+  display: flex;
+  align-items: center;
+}
+
+._abt_drm_trvl_crd_arow button {
   padding: 22px;
   border: 1px solid #fff;
   width: 61px;
@@ -565,6 +632,23 @@ textarea:focus {
   transition: 0.2s all ease;
 }
 
+._abt_drm_trvl_crd_arow button:hover {
+  box-shadow: 0px 25px 40px rgba(59, 80, 90, 0.05);
+}
+
+.glide__slide--active ._abt_drm_trvl_crd_btm {
+  display: block;
+}
+
+.glide__slide--active ._abt_drm_trvl_crd_top {
+  border-radius: 0px;
+}
+
+.glide__slide--active ._abt_drm_trvl_crd_top img {
+  border-radius: 0px;
+}
+
+/*---=== ABOUT US END ===---*/
 .card-carousel {
   background-color: #f8f8f8;
   padding: 20px 108px;
