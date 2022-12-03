@@ -92,7 +92,7 @@ $(document).ready(function (){
 let config3 = {
   type: 'carousel',
   perView: 2,
-  autoplay:2500,
+  // autoplay:2500,
   animationDuration: 600,
   animationTimingFunc: 'linear',
   breakpoints: {
@@ -106,3 +106,28 @@ let config3 = {
 };
 
 new Glide('.about-slider', config3).mount();
+
+
+// select-2
+
+
+$(document).ready(function() {
+  $('.js-is-select2').on('select2:open', function() {
+    if (Modernizr.touch) {
+      $('.select2-search__field').prop('focus', false);
+    }
+  });
+});
+
+$(document).ready(function() {
+  $('.js-source-states').select2({
+    width:"100%",
+    allowClear: true,
+    tag: false, 
+    placeholder: "Select"
+  }); 
+});
+
+
+
+

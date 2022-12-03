@@ -77,17 +77,10 @@ textarea:focus {
   padding-bottom: 12px;
 }
 
-#hero .select-2 .form-select {
+.js-source-states {
   border: none;
-  font-size: 1rem;
-}
-#hero .select-2 .form-select .form-select-lg {
-  border: none;
-  padding-left: none;
-  font-size: 1rem;
-}
-#hero .select-2 .form-select .form-select-lg option {
-  top: 30px;
+  width: 100%;
+  outline: none;
 }
 
 #hero {

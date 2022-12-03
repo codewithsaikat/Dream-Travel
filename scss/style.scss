@@ -102,27 +102,19 @@ textarea:focus {
 
 //   form-select
 
-#hero {
-  .select-2 {
-    .form-select {
+.js-source-states {
+  border: none;
+  width: 100%;
+  outline: none;
 
-      border: none;
-      font-size: 1rem;
-
-      .form-select-lg {
-        border: none;
-        padding-left: none;
-        font-size: 1rem;
-
-
-        option {
-
-          top: 30px;
-        }
-      }
-    }
-  }
+  // optgroup {
+  //   margin-top: 200px;
+  // }
+  
 }
+
+
+
 
 //  SEARCH-BOX
 
