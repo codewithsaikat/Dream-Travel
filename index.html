@@ -9,6 +9,8 @@
     <link rel="icon" href="./assets/img/dream.jpg" type="image/x-icon">
     <!-- select-2 -->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- glide-slider -->
+    <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <!-- owl-carousel -->
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <!-- slick-slider -->
@@ -28,289 +30,82 @@
 </head>
 <!-- header-area -->
 
-<div class="header-area">
-    <div class="container">
-        <div class="row">
-            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-4 ">
-                <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                    <img src="./assets/img/Logo.png" alt="">
-                </a>
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-4 link-secondary">find a trip</a></li>
-                    <li><a href="#" class="nav-link px-4 link-dark">destinations</a></li>
-                    <li><a href="#" class="nav-link px-4 link-dark">why besnik</a></li>
-                    <li><a href="#" class="nav-link px-4 link-dark">contact</a></li>
-                </ul>
-                <div class="col-md-3 text-end">
-                    <button type="button" class="btn">Create Account</button>
-                </div>
-            </header>
+<body>
+    <div class="header-area">
+        <div class="container">
+            <div class="row">
+                <header
+                    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-4 ">
+                    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                        <img src="./assets/img/Logo.png" alt="">
+                    </a>
+                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-4 link-secondary">find a trip</a></li>
+                        <li><a href="#" class="nav-link px-4 link-dark">destinations</a></li>
+                        <li><a href="#" class="nav-link px-4 link-dark">why besnik</a></li>
+                        <li><a href="#" class="nav-link px-4 link-dark">contact</a></li>
+                    </ul>
+                    <div class="col-md-3 text-end">
+                        <button type="button" class="btn">Create Account</button>
+                    </div>
+                </header>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Hero-area -->
-<div class="hero-area hero-area--1">
-    <div class="container">
-        <div class="row">
-            <div class="text-secondary px-4 py-5 text-center">
-                <h1 class="fw-bold text-white">Exploring The World <br> In Comfort.</h1>
-                <div class="col-lg-8 mx-auto">
-                    <p class="mb-4">You do not have the right to remain silent… let us know what it <br> takes to
-                        challenge you.</p>
-                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-content-center">
-                        <section id="hero">
-                            <div class="container">
-                                <div class="searchwrapper">
-                                    <div class="searchbox">
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <div
-                                                    class="search-area d-flex justify-content-between align-items-center ps-3">
-                                                    <img src="./assets/icon/search.png" alt="src" class="pe-2">
+    <!-- Hero-area -->
+    <div class="hero-area hero-area--1">
+        <div class="container">
+            <div class="row">
+                <div class="text-secondary px-4 py-5 text-center">
+                    <h1 class="fw-bold text-white">Exploring The World <br> In Comfort.</h1>
+                    <div class="col-lg-8 mx-auto">
+                        <p class="mb-4">You do not have the right to remain silent… let us know what it <br> takes to
+                            challenge you.</p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-content-center">
+                            <section id="hero">
+                                <div class="container">
+                                    <div class="searchwrapper">
+                                        <div class="searchbox">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div
+                                                        class="search-area d-flex justify-content-between align-items-center ps-3">
+                                                        <img src="./assets/icon/search.png" alt="src" class="pe-2">
 
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Search destination">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Search destination">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4 pe-3 ps-3">
-                                                <div
-                                                    class="location-area d-flex justify-content-between align-items-center ps-2 text-wrap">
-                                                    <img src="./assets/icon/location.png" alt="rrrr" class="pe-2">
+                                                <div class="col-md-4 pe-3 ps-3">
+                                                    <div
+                                                        class="location-area d-flex justify-content-between align-items-center ps-2 text-wrap">
+                                                        <img src="./assets/icon/location.png" alt="rrrr" class="pe-2">
 
-                                                    <input type="text" class="form-control" placeholder="C.Location">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="C.Location">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 ps-2">
-                                                <div class="select-2 text-muted">
-                                                    <select class="form-select form-select-lg text-muted"
-                                                        aria-label=".form-select-lg example">
-                                                        <option selected>2 person</option>
-                                                        <option value="1">3 person</option>
-                                                        <option value="2">4 person</option>
-                                                        <option value="3">5 person</option>
-                                                        <option value="3">6 person</option>
-                                                        <option value="3">7 person</option>
-                                                    </select>
+                                                <div class="col-md-3 ps-2">
+                                                    <div class="select-2 text-muted">
+                                                        <select class="form-select form-select-lg text-muted"
+                                                            aria-label=".form-select-lg example">
+                                                            <option selected>2 person</option>
+                                                            <option value="1">3 person</option>
+                                                            <option value="2">4 person</option>
+                                                            <option value="3">5 person</option>
+                                                            <option value="3">6 person</option>
+                                                            <option value="3">7 person</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </section>
-                        <div class="btn-hero">
-                            <button type="button" class="btn btn-primary">search</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Feature-card-section -->
-
-<div class="feature-cards">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3 text-center">
-                <h2>We Provide Best</h2>
-                <p>Take high quality online courses from the best online instructor's <br>
-                    around the world & develop your skills.</p>
-            </div>
-            <div class="row row-cols-1 row-cols-lg-3 gap d-flex pdn ">
-                <div class="box-container">
-                    <!-- card--1 -->
-                    <div class="box-item">
-                        <div class="flip-box">
-                            <div class="flip-box-front">
-                                <div class="feature">
-                                    <div class="feature-icon ">
-                                        <i>
-                                            <img src="./assets/icon/card-icon-1.png" class="bi"></img>
-                                        </i>
-                                    </div>
-                                    <h5>Select Destination</h5>
-                                    <p>At first choose the place you wanted to go</p>
-                                </div>
-                            </div>
-                            <div class="flip-box-back">
-                                <div class="feature">
-                                    <div class="feature-icon ">
-                                        <i>
-                                            <img src="./assets/icon/card-icon-1.png" class="bi"></img>
-                                        </i>
-                                    </div>
-                                    <h5>Select Destination</h5>
-                                    <p>At first choose the place you wanted to go</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- card-2 -->
-                    <div class="box-item">
-                        <div class="flip-box">
-                            <div class="flip-box-front">
-                                <div class="feature">
-                                    <div class="feature-icon ">
-                                        <i>
-                                            <img src="./assets/icon/card-icon-2.png" class="bi"></img>
-                                        </i>
-                                    </div>
-                                    <h5>Book a Trip</h5>
-                                    <p>book your tip form our exclusive offers</p>
-                                </div>
-                            </div>
-                            <div class="flip-box-back">
-                                <div class="feature">
-                                    <div class="feature-icon ">
-                                        <i>
-                                            <img src="./assets/icon/card-icon-2.png" class="bi"></img>
-                                        </i>
-                                    </div>
-                                    <h5>Book a Trip</h5>
-                                    <p>book your tip form our exclusive offers</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- card-3 -->
-
-                    <div class="box-item">
-                        <div class="flip-box">
-                            <div class="flip-box-front">
-                                <div class="feature">
-                                    <div class="feature-icon ">
-                                        <i>
-                                            <img src="./assets/icon/card-icon-3.png" class="bi"></img>
-                                        </i>
-                                    </div>
-                                    <h5>Take your flight</h5>
-                                    <p>Take your flight on selected date and joy</p>
-                                </div>
-                            </div>
-                            <div class="flip-box-back">
-                                <div class="feature">
-                                    <div class="feature-icon ">
-                                        <i>
-                                            <img src="./assets/icon/card-icon-3.png" class="bi"></img>
-                                        </i>
-                                    </div>
-                                    <h5>Take your flight</h5>
-                                    <p>Take your flight on selected date and joy</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end-rows -->
-        </div>
-    </div>
-</div>
-
-
-<!-- Quotation slider -->
-<!-- 
-*********************************after-work********************************************************* -->
-<h1 class="d-flex justify-content-center align-content-center ">??SLIDER??</h1>
-
-
-<!-- Featured tour place -->
-
-<div class="tour-place">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3 text-center">
-                <h2>Featured Tour Places</h2>
-                <p>There are many variations of passages of Lorem Ipsum available, <br> but the majority have suffered
-                    alteration.</p>
-            </div>
-            <div
-                class="row gap row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 d-flex justify-content-center align-content-center">
-                <div class="tour-section">
-                    <div class="tour-country">
-                        <div class="tour-img justify-content-center align-content-center">
-                            <img src="./assets/img/country-1.png" alt="11">
-                        </div>
-                        <h5>Spain</h5>
-
-                        <div class="tour-top d-flex justify-content-between align-items-center">
-                            <div class="tour-top-left d-flex justify-content-center align-items-center">
-                                <div class="tour-svg">
-                                    <img class="svg" src="./assets/svg/clock 1.svg" alt="1">
-                                </div>
-                                <div class="tour-text text-muted ms-2">
-                                    7 Days/6
-                                </div>
-                            </div>
-                            <div class="tour-top-right">
-                                $544.0
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tour-section">
-                    <div class="tour-country">
-                        <div class="tour-img justify-content-center align-content-center">
-                            <img src="./assets/img/country-2.png" alt="11">
-                        </div>
-                        <h5>Japan</h5>
-                        <div class="tour-top d-flex justify-content-between align-items-center">
-                            <div class="tour-top-left d-flex justify-content-center align-items-center">
-                                <div class="tour-svg">
-                                    <img class="svg" src="./assets/svg/clock 1.svg" alt="1">
-                                </div>
-                                <div class="tour-text text-muted ms-2">
-                                    7 Days/6
-                                </div>
-                            </div>
-                            <div class="tour-top-right">
-                                $544.0
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tour-section">
-                    <div class="tour-country">
-                        <div class="tour-img justify-content-center align-items-center">
-                            <img src="./assets/img/country-3.png" alt="11">
-                        </div>
-                        <h5 class="">London</h5>
-                        <div class="tour-top d-flex justify-content-between align-items-center">
-                            <div class="tour-top-left d-flex justify-content-center align-items-center">
-                                <div class="tour-svg">
-                                    <img class="svg" src="./assets/svg/clock 1.svg" alt="1">
-                                </div>
-                                <div class="tour-text text-muted ms-2">
-                                    7 Days/6
-                                </div>
-                            </div>
-                            <div class="tour-top-right">
-                                $544.0
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tour-section">
-                    <div class="tour-country">
-                        <div class="tour-img justify-content-center align-items-center align-self-center">
-                            <img src="./assets/img/country-4.png" alt="11">
-                        </div>
-                        <h5>Canada</h5>
-                        <div class="tour-top d-flex justify-content-between align-items-center">
-                            <div class="tour-top-left d-flex justify-content-center align-items-center">
-                                <div class="tour-svg">
-                                    <img class="svg" src="./assets/svg/clock 1.svg" alt="1">
-                                </div>
-                                <div class="tour-text text-muted ms-2">
-                                    7 Days/6
-                                </div>
-                            </div>
-                            <div class="tour-top-right">
-                                $544.0
+                            </section>
+                            <div class="btn-hero">
+                                <button type="button" class="btn btn-primary">search</button>
                             </div>
                         </div>
                     </div>
@@ -318,314 +113,684 @@
             </div>
         </div>
     </div>
-</div>
 
-<!-- Logo-partner -->
+    <!-- Feature-card-section -->
 
-<div class="logo-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3 text-center">
-                <h2>Our Tour Partner</h2>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration.</p>
-            </div>
-            <div
-                class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 d-flex justify-content-center align-content-center text-center  logo-img ">
-                <div class="a">
-                    <img src="./assets/img/text-img-1.png" alt="1">
-                </div>
-                <div class="b">
-                    <img src="./assets/img/text-img-2.png" alt="2">
-                </div>
-                <div class="c">
-                    <img src="./assets/img/text-img-3.png" alt="3">
-                </div>
-                <div class="d">
-                    <img src="./assets/img/text-img-4.png" alt="4">
-                </div>
-                <div class="e d-flex justify-content-end align-self-center">
-                    <img src="./assets/img/text-img-5.png" alt="5">
-                </div>
-                <div class="f d-flex justify-content-start align-self-center">
-                    <img src="./assets/img/text-img-6.png" alt="6">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<!--------- Card-carousel -------->
-
-<div class="section-padding card-carousel no-padding-top">
-    <div class="container">
-        <div class="row mg-l">
-            <div class="col-lg-6 text-start">
-                <span>TOP CITYS</span>
-                <h2>Our popular cities</h2>
-                <p>We’re a team of humans with the strategy, tools, and solutions and digital products.
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="card-list">
-                    <div class="single-team-item  single-team-1 " width="365"
-                        style="background-image: url(./assets/img/card-carousel-1.png)">
-                        <button type="button" class="btn shadow">Dubai</button>
-                        <h3>Japan</h3>
-                        <p>10 Popular Places</p>
-
-                    </div>
-                    <div class="single-team-item single-tem-2 "
-                        style="background-image: url(./assets/img/card-carousel-2.png)">
-                        <button type="button" class="btn shadow">Barcelona</button>
-                        <h3>Bali</h3>
-                        <p>10 Popular Places</p>
-                    </div>
-                    <div class="single-team-item single-tem-3 "
-                        style="background-image: url(./assets/img/card-carousel-3.png)">
-                        <button type="button" class="btn  shadow">Canada</button>
-                        <h3>canada</h3>
-                        <p>10 Popular Places</p>
-                    </div>
-                    <div class="single-team-item single-tem-4"
-                        style="background-image: url(./assets/img/country-4.png)">
-                        <button type="button shadow" class="btn shadow">Spain</button>
-                        <h3>spain</h3>
-                        <p>10 Popular Places</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- testimonial-carousel -->
-
-<div class="testimonial">
-    <div class="container">
-        <div class="row mg-l">
-            <div class="col-lg-6 text-start team">
-                <span>TESTIMONIALS</span>
-                <h2>What our client say</h2>
-                <p>Create a visual identity for your company, and an overall brand
-                </p>
-            </div>
-        </div>
-        <div class="row ">
-            <div class="col-lg-12">
-                <div class="testimonial-list  d-flex ">
-                    <div class="single-testimonial-item  d-flex flex-column   
-                    justify-content-center align-items-center text-center ">
-                        <div class="img-round justify-content-center">
-                            <img src="./assets/img/testi-1.jpg " class="rounded-circle shadow" alt="1111">
-                        </div>
-                        <h5>Rabbi Islam Rony</h5>
-                        <p class="text-center">Front-end developer</p>
-
-                        <div class="thin-line"></div>
-                        <div class="text-ico d-flex justify-content-start flex-column">
-                            <ul class="list-unstyled d-flex justify-content-start mb-0">
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                            </ul>
-                            <p class="text-start">Before we define any approach, we need to define the brands' overall
-                                goal. We then need to dive</p>
-
-                        </div>
-
-                    </div>
-                    <div class="single-testimonial-item  d-flex flex-column   
-                    justify-content-between align-items-center text-center ">
-                        <div class="img-round">
-                            <img src="./assets/img/testi-1.jpg " class="rounded-circle shadow" alt="1111">
-                        </div>
-                        <h5>Rabbi Islam Rony</h5>
-                        <p class="text-center">Front-end developer</p>
-
-                        <div class="thin-line"></div>
-                        <div class="text-ico d-flex justify-content-start flex-column">
-                            <ul class="list-unstyled d-flex justify-content-start mb-0">
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                            </ul>
-                            <p class="text-start">Before we define any approach, we need to define the brands' overall
-                                goal. We then need to dive</p>
-
-                        </div>
-                    </div>
-                    <div class="single-testimonial-item d-flex flex-column   
-                    justify-content-between align-items-center text-center ">
-                        <div class="img-round">
-                            <img src="./assets/img/testi-1.jpg " class="rounded-circle shadow" alt="1111">
-                        </div>
-                        <h5>Rabbi Islam Rony</h5>
-                        <p class="text-center">Front-end developer</p>
-
-                        <div class="thin-line"></div>
-                        <div class="text-ico d-flex justify-content-start flex-column">
-                            <ul class="list-unstyled d-flex justify-content-start mb-0">
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                            </ul>
-                            <p class="text-start">Before we define any approach, we need to define the brands' overall
-                                goal. We then need to dive</p>
-
-                        </div>
-                    </div>
-                    <div class="single-testimonial-item  d-flex flex-column   
-                    justify-content-between align-items-center text-center ">
-                        <div class="img-round">
-                            <img src="./assets/img/testi-1.jpg " class="rounded-circle shadow" alt="1111">
-                        </div>
-                        <h5>Rabbi Islam Rony</h5>
-                        <p class="text-center">Front-end developer</p>
-
-                        <div class="thin-line"></div>
-                        <div class="text-ico d-flex justify-content-start flex-column">
-                            <ul class="list-unstyled d-flex justify-content-start mb-0">
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                            </ul>
-                            <p class="text-start">Before we define any approach, we need to define the brands' overall
-                                goal. We then need to dive</p>
-
-                        </div>
-                    </div>
-                    <div class="single-testimonial-item  d-flex flex-column   
-                    justify-content-between align-items-center text-center ">
-                        <div class="img-round">
-                            <img src="./assets/img/testi-1.jpg " class="rounded-circle shadow" alt="1111">
-                        </div>
-                        <h5>Rabbi Islam Rony</h5>
-                        <p class="text-center">Front-end developer</p>
-
-                        <div class="thin-line"></div>
-                        <div class="text-ico d-flex justify-content-start flex-column">
-                            <ul class="list-unstyled d-flex justify-content-start mb-0">
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                                <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
-                            </ul>
-                            <p class="text-start">Before we define any approach, we need to define the brands' overall
-                                goal. We then need to dive</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<!-- Footer-area -->
-
-<footer class="footer">
-    <div class="site-section">
+    <div class="feature-cards">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-10 col-lg-12">
-                    <div class="cta-box  d-flex align-items-center justify-content-between">
-                        <div class="text-box">
-                            <h2 class="">Get our pro offers </h2>
-                            <p class="text-white">Create a visual identity for your company, and an overall brand</p>
-                        </div>
-                        <div class="subscribe">
-                            <form action="#" class="subscribe-form">
-                                <div class="form-group d-flex">
-                                    <input type="text" class="form-control rounded-left" placeholder="Enter email address">
-                                    <input type="submit" value="Subscribe" class="form-control submit px-3">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>                
-            </div>
             <div class="row">
-                <div class="col-6 col-lg-4">
-                    <a class="d-inline-flex align-items-center mb-4  text-decoration-none" href="/">
-                        <img src="./assets/img/logo.png" alt="ddff">
-                    </a>
-                    <p class="text-muted hd">There are many variations of passages of available
-                    </p>
+                <div class="col-lg-6 offset-lg-3 text-center">
+                    <h2>We Provide Best</h2>
+                    <p>Take high quality online courses from the best online instructor's <br>
+                        around the world & develop your skills.</p>
                 </div>
-                <div class="col-6 col-lg-2 d-flex  flex-column logo-text">
-                    <div class="ico-text d-flex  align-items-center mb-3">
-                        <div class="logo me-3 ">
-                            <a href="#">
-                                <img src="./assets/icon/Facebook.png" alt="1222">
-                            </a>
+                <div class="row row-cols-1 row-cols-lg-3 gap d-flex pdn ">
+                    <div class="box-container">
+                        <!-- card--1 -->
+                        <div class="box-item">
+                            <div class="flip-box">
+                                <div class="flip-box-front">
+                                    <div class="feature">
+                                        <div class="feature-icon ">
+                                            <i>
+                                                <img src="./assets/icon/card-icon-1.png" class="bi"></img>
+                                            </i>
+                                        </div>
+                                        <h5>Select Destination</h5>
+                                        <p>At first choose the place you wanted to go</p>
+                                    </div>
+                                </div>
+                                <div class="flip-box-back">
+                                    <div class="feature">
+                                        <div class="feature-icon ">
+                                            <i>
+                                                <img src="./assets/icon/card-icon-1.png" class="bi"></img>
+                                            </i>
+                                        </div>
+                                        <h5>Select Destination</h5>
+                                        <p>At first choose the place you wanted to go</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text">
-                            Facebook
+                        <!-- card-2 -->
+                        <div class="box-item">
+                            <div class="flip-box">
+                                <div class="flip-box-front">
+                                    <div class="feature">
+                                        <div class="feature-icon ">
+                                            <i>
+                                                <img src="./assets/icon/card-icon-2.png" class="bi"></img>
+                                            </i>
+                                        </div>
+                                        <h5>Book a Trip</h5>
+                                        <p>book your tip form our exclusive offers</p>
+                                    </div>
+                                </div>
+                                <div class="flip-box-back">
+                                    <div class="feature">
+                                        <div class="feature-icon ">
+                                            <i>
+                                                <img src="./assets/icon/card-icon-2.png" class="bi"></img>
+                                            </i>
+                                        </div>
+                                        <h5>Book a Trip</h5>
+                                        <p>book your tip form our exclusive offers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- card-3 -->
+
+                        <div class="box-item">
+                            <div class="flip-box">
+                                <div class="flip-box-front">
+                                    <div class="feature">
+                                        <div class="feature-icon ">
+                                            <i>
+                                                <img src="./assets/icon/card-icon-3.png" class="bi"></img>
+                                            </i>
+                                        </div>
+                                        <h5>Take your flight</h5>
+                                        <p>Take your flight on selected date and joy</p>
+                                    </div>
+                                </div>
+                                <div class="flip-box-back">
+                                    <div class="feature">
+                                        <div class="feature-icon ">
+                                            <i>
+                                                <img src="./assets/icon/card-icon-3.png" class="bi"></img>
+                                            </i>
+                                        </div>
+                                        <h5>Take your flight</h5>
+                                        <p>Take your flight on selected date and joy</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="ico-text d-flex  align-items-center">
-                        <div class="logo me-3">
-                            <a href="#">
-                                <img src="./assets/icon/Twitter.png" alt="1222">
-                            </a>
-                        </div>
-                        <div class="text">
-                            Twitter
-                        </div>
-                    </div>                   
                 </div>
-                <div class="col-6 col-lg-2 d-flex  flex-column logo-text">
-                    <div class="ico-text d-flex  align-items-center mb-3">
-                        <div class="logo me-3">
-                            <a href="#">
-                                <img src="./assets/icon/Linkedin.png" alt="1222">
-                            </a>
-                        </div>
-                        <div class="text">
-                            Linkedin
-                        </div>
-                    </div>
-                    <div class="ico-text d-flex  align-items-center">
-                        <div class="logo me-3">
-                            <a href="#">
-                                <img src="./assets/icon/Pinterest.png" alt="1222">
-                            </a>
-                        </div>
-                        <div class="text">
-                            Pinterest
-                        </div>
-                    </div>
-                   
-                </div> 
-                <div class="col-6 col-lg-2 offset-lg-2">
-                    <h5>Recent Post</h5>
-                    <p class="mt-4 text-muted">Top 5 Himalayan Treks <br>
-                        May 17,2021
-                    </p>
-                </div>
-                            
+                <!-- end-rows -->
             </div>
         </div>
     </div>
-</footer>
+
+
+    <!--Gild-slider-->    
+<section class="slider-1">
+    <div class="container">
+       <div class="slider-top">
+          <div class="slider-top-left">
+             <p class="slider-top-left-p">
+                ABOUT US
+             </p>
+             <h1>
+                Explore all corners of the world with us.
+             </h1>
+          </div>
+          <div class="slider-top-right">
+             <p class="slider-top-right-p">
+                These exercises ran in parallel with a series of focus groups comprising of parents. These exercises ran in parallel with a series of focus groups comprising of parents.
+             </p>
+          </div>
+       </div>
+        <div class="about-slider glide--ltr glide--carousel glide--swipeable">  
+            <div class="glide__track" data-glide-el="track">    
+             <div class="card-all glide__slides" style="transition: transform 0ms linear 0s; width: 6520px; transform: translate3d(-1306px, 0px, 0px);">
+                <div class="travel-card glide__slide glide__slide--clone" style="width: 643px; margin-right: 5px;">
+                    <div class="travel-card--top">
+                       <img src="./assets/img/glide-2.png" alt="88888">
+                    </div>
+                    <div class="travel-card--bottom">
+                       <div class="travel-card--icon">
+                         <img class="svg" src="./assets/icon/glide-icon.png" alt="77">
+                       </div>
+                       <h2>
+                          Nanjing, China
+                       </h2>
+                       <p>
+                          These exercises ran in parallel with a series of focus groups comprising of parents. These exercises ran in parallel with a series.
+                       </p>
+                    </div>
+                 </div>
+                 <div class="travel-card glide__slide glide__slide--clone" style="width: 643px; margin-left: 5px; margin-right: 5px;">
+                    <div class="travel-card--top">
+                       <img src="./assets/img/glide-2.png" alt="88888">
+                    </div>
+                    <div class="travel-card--bottom">
+                       <div class="travel-card--icon">
+                         <img class="svg" src="./assets/icon/glide-icon.png" alt="77">
+                       </div>
+                       <h2>
+                          Nanjing, China
+                       </h2>
+                       <p>
+                          These exercises ran in parallel with a series of focus groups comprising of parents. These exercises ran in parallel with a series.
+                       </p>
+                    </div>
+                 </div> 
+                <div class="travel-card-active glide__slide  glide__slide--active" style="width: 643px; margin-left: 5px; margin-right: 5px;">
+                   <div class="travel-card--top">
+                      <img src="./assets/img/glide-1.png" alt="88888">
+                   </div>
+                   <div class="travel-card--bottom">
+                      <div class="travel-card--icon">
+                        <img class="svg" src="./assets/icon/glide-icon.png" alt="77">
+                      </div>
+                      <h2>
+                         Nanjing, China
+                      </h2>
+                      <p>
+                         These exercises ran in parallel with a series of focus groups comprising of parents. These exercises ran in parallel with a series.
+                      </p>
+                   </div>
+                </div>
+                 
+                 <div class="travel-card glide__slide" style="width: 643px; margin-left: 5px; margin-right: 5px;">
+                    <div class="travel-card--top">
+                       <img src="./assets/img/glide-3.jpg" alt="88888">
+                    </div>
+                    <div class="travel-card--bottom">
+                       <div class="travel-card--icon">
+                         <img class="svg" src="./assets/icon/glide-icon.png" alt="77">
+                       </div>
+                       <h2>
+                          Nanjing, China
+                       </h2>
+                       <p>
+                          These exercises ran in parallel with a series of focus groups comprising of parents. These exercises ran in parallel with a series.
+                       </p>
+                    </div>
+                 </div>  
+                 <div class="travel-card glide__slide" style="width: 643px; margin-left: 5px; margin-right: 5px;">
+                    <div class="travel-card--top">
+                       <img src="./assets/img/glide-3.jpg" alt="88888">
+                    </div>
+                    <div class="travel-card--bottom">
+                       <div class="travel-card--icon">
+                         <img class="svg" src="./assets/icon/glide-icon.png" alt="77">
+                       </div>
+                       <h2>
+                          Nanjing, China
+                       </h2>
+                       <p>
+                          These exercises ran in parallel with a series of focus groups comprising of parents. These exercises ran in parallel with a series.
+                       </p>
+                    </div>
+                 </div>
+                 <div class="travel-card glide__slide" style="width: 643px; margin-left: 5px; margin-right: 5px;">
+                    <div class="travel-card--top">
+                       <img src="./assets/img/glide-3.jpg" alt="88888">
+                    </div>
+                    <div class="travel-card--bottom">
+                       <div class="travel-card--icon">
+                         <img class="svg" src="./assets/icon/glide-icon.png" alt="77">
+                       </div>
+                       <h2>
+                          Nanjing, China
+                       </h2>
+                       <p>
+                          These exercises ran in parallel with a series of focus groups comprising of parents. These exercises ran in parallel with a series.
+                       </p>
+                    </div>
+                 </div>
+                 <div class="travel-card-active glide__slide  glide__slide--active" style="width: 643px; margin-left: 5px; margin-right: 5px;">
+                    <div class="travel-card--top">
+                       <img src="./assets/img/glide-1.png" alt="88888">
+                    </div>
+                    <div class="travel-card--bottom">
+                       <div class="travel-card--icon">
+                         <img class="svg" src="./assets/icon/glide-icon.png" alt="77">
+                       </div>
+                       <h2>
+                          Nanjing, China
+                       </h2>
+                       <p>
+                          These exercises ran in parallel with a series of focus groups comprising of parents. These exercises ran in parallel with a series.
+                       </p>
+                    </div>
+                 </div>              
+             </div>
+            </div>
+
+
+
+                        <!-- ARROW -->
+
+            
+            <div class="travel-card-arrow">
+             <div class="glide-arrows" data-glide-el="controls">
+                <button class="glide__arrow glide-arrow-left">
+                    <img src="./assets/icon/1-2-arrow-png-image.png "style="height: 10px" alt="aaa">
+                </button>
+                <button class="glide__arrow glide-arrow-right">
+                    <img src="./assets/icon/5-2-arrow-transparent.png" style="height: 10px" alt="ggg">
+                </button>
+            </div>
+            </div>      
+        </div> 
+    </div>
+</section>
+
+
+
+    <!-- Featured tour place -->
+
+    <div class="tour-place">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 text-center">
+                    <h2>Featured Tour Places</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, <br> but the majority have
+                        suffered
+                        alteration.</p>
+                </div>
+                <div
+                    class="row gap row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 d-flex justify-content-center align-content-center">
+                    <div class="tour-section">
+                        <div class="tour-country">
+                            <div class="tour-img justify-content-center align-content-center">
+                                <img src="./assets/img/country-1.png" alt="11">
+                            </div>
+                            <h5>Spain</h5>
+
+                            <div class="tour-top d-flex justify-content-between align-items-center">
+                                <div class="tour-top-left d-flex justify-content-center align-items-center">
+                                    <div class="tour-svg">
+                                        <img class="svg" src="./assets/svg/clock 1.svg" alt="1">
+                                    </div>
+                                    <div class="tour-text text-muted ms-2">
+                                        7 Days/6
+                                    </div>
+                                </div>
+                                <div class="tour-top-right">
+                                    $544.0
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-section">
+                        <div class="tour-country">
+                            <div class="tour-img justify-content-center align-content-center">
+                                <img src="./assets/img/country-2.png" alt="11">
+                            </div>
+                            <h5>Japan</h5>
+                            <div class="tour-top d-flex justify-content-between align-items-center">
+                                <div class="tour-top-left d-flex justify-content-center align-items-center">
+                                    <div class="tour-svg">
+                                        <img class="svg" src="./assets/svg/clock 1.svg" alt="1">
+                                    </div>
+                                    <div class="tour-text text-muted ms-2">
+                                        7 Days/6
+                                    </div>
+                                </div>
+                                <div class="tour-top-right">
+                                    $544.0
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-section">
+                        <div class="tour-country">
+                            <div class="tour-img justify-content-center align-items-center">
+                                <img src="./assets/img/country-3.png" alt="11">
+                            </div>
+                            <h5 class="">London</h5>
+                            <div class="tour-top d-flex justify-content-between align-items-center">
+                                <div class="tour-top-left d-flex justify-content-center align-items-center">
+                                    <div class="tour-svg">
+                                        <img class="svg" src="./assets/svg/clock 1.svg" alt="1">
+                                    </div>
+                                    <div class="tour-text text-muted ms-2">
+                                        7 Days/6
+                                    </div>
+                                </div>
+                                <div class="tour-top-right">
+                                    $544.0
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-section">
+                        <div class="tour-country">
+                            <div class="tour-img justify-content-center align-items-center align-self-center">
+                                <img src="./assets/img/country-4.png" alt="11">
+                            </div>
+                            <h5>Canada</h5>
+                            <div class="tour-top d-flex justify-content-between align-items-center">
+                                <div class="tour-top-left d-flex justify-content-center align-items-center">
+                                    <div class="tour-svg">
+                                        <img class="svg" src="./assets/svg/clock 1.svg" alt="1">
+                                    </div>
+                                    <div class="tour-text text-muted ms-2">
+                                        7 Days/6
+                                    </div>
+                                </div>
+                                <div class="tour-top-right">
+                                    $544.0
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logo-partner -->
+
+    <div class="logo-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 text-center">
+                    <h2>Our Tour Partner</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration.</p>
+                </div>
+                <div
+                    class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 d-flex justify-content-center align-content-center text-center  logo-img ">
+                    <div class="a">
+                        <img src="./assets/img/text-img-1.png" alt="1">
+                    </div>
+                    <div class="b">
+                        <img src="./assets/img/text-img-2.png" alt="2">
+                    </div>
+                    <div class="c">
+                        <img src="./assets/img/text-img-3.png" alt="3">
+                    </div>
+                    <div class="d">
+                        <img src="./assets/img/text-img-4.png" alt="4">
+                    </div>
+                    <div class="e d-flex justify-content-end align-self-center">
+                        <img src="./assets/img/text-img-5.png" alt="5">
+                    </div>
+                    <div class="f d-flex justify-content-start align-self-center">
+                        <img src="./assets/img/text-img-6.png" alt="6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--------- Card-carousel -------->
+
+    <div class="section-padding card-carousel no-padding-top">
+        <div class="container">
+            <div class="row mg-l">
+                <div class="col-lg-6 text-start">
+                    <span>TOP CITYS</span>
+                    <h2>Our popular cities</h2>
+                    <p>We’re a team of humans with the strategy, tools, and solutions and digital products.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card-list">
+                        <div class="single-team-item  single-team-1 " width="365"
+                            style="background-image: url(./assets/img/card-carousel-1.png)">
+                            <button type="button" class="btn shadow">Dubai</button>
+                            <h3>Japan</h3>
+                            <p>10 Popular Places</p>
+
+                        </div>
+                        <div class="single-team-item single-tem-2 "
+                            style="background-image: url(./assets/img/card-carousel-2.png)">
+                            <button type="button" class="btn shadow">Barcelona</button>
+                            <h3>Bali</h3>
+                            <p>10 Popular Places</p>
+                        </div>
+                        <div class="single-team-item single-tem-3 "
+                            style="background-image: url(./assets/img/card-carousel-3.png)">
+                            <button type="button" class="btn  shadow">Canada</button>
+                            <h3>canada</h3>
+                            <p>10 Popular Places</p>
+                        </div>
+                        <div class="single-team-item single-tem-4"
+                            style="background-image: url(./assets/img/country-4.png)">
+                            <button type="button shadow" class="btn shadow">Spain</button>
+                            <h3>spain</h3>
+                            <p>10 Popular Places</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- testimonial-carousel -->
+
+    <div class="testimonial">
+        <div class="container">
+            <div class="row mg-l">
+                <div class="col-lg-6 text-start team">
+                    <span>TESTIMONIALS</span>
+                    <h2>What our client say</h2>
+                    <p>Create a visual identity for your company, and an overall brand
+                    </p>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-12">
+                    <div class="testimonial-list  d-flex ">
+                        <div class="single-testimonial-item  d-flex flex-column   
+                    justify-content-center align-items-center text-center ">
+                            <div class="img-round justify-content-center">
+                                <img src="./assets/img/testi-1.jpg " class="rounded-circle shadow" alt="1111">
+                            </div>
+                            <h5>Rabbi Islam Rony</h5>
+                            <p class="text-center">Front-end developer</p>
+
+                            <div class="thin-line"></div>
+                            <div class="text-ico d-flex justify-content-start flex-column">
+                                <ul class="list-unstyled d-flex justify-content-start mb-0">
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                </ul>
+                                <p class="text-start">Before we define any approach, we need to define the brands'
+                                    overall
+                                    goal. We then need to dive</p>
+
+                            </div>
+
+                        </div>
+                        <div class="single-testimonial-item  d-flex flex-column   
+                    justify-content-between align-items-center text-center ">
+                            <div class="img-round">
+                                <img src="./assets/img/testi-1.jpg " class="rounded-circle shadow" alt="1111">
+                            </div>
+                            <h5>Rabbi Islam Rony</h5>
+                            <p class="text-center">Front-end developer</p>
+
+                            <div class="thin-line"></div>
+                            <div class="text-ico d-flex justify-content-start flex-column">
+                                <ul class="list-unstyled d-flex justify-content-start mb-0">
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                </ul>
+                                <p class="text-start">Before we define any approach, we need to define the brands'
+                                    overall
+                                    goal. We then need to dive</p>
+
+                            </div>
+                        </div>
+                        <div class="single-testimonial-item d-flex flex-column   
+                    justify-content-between align-items-center text-center ">
+                            <div class="img-round">
+                                <img src="./assets/img/testi-1.jpg " class="rounded-circle shadow" alt="1111">
+                            </div>
+                            <h5>Rabbi Islam Rony</h5>
+                            <p class="text-center">Front-end developer</p>
+
+                            <div class="thin-line"></div>
+                            <div class="text-ico d-flex justify-content-start flex-column">
+                                <ul class="list-unstyled d-flex justify-content-start mb-0">
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                </ul>
+                                <p class="text-start">Before we define any approach, we need to define the brands'
+                                    overall
+                                    goal. We then need to dive</p>
+
+                            </div>
+                        </div>
+                        <div class="single-testimonial-item  d-flex flex-column   
+                    justify-content-between align-items-center text-center ">
+                            <div class="img-round">
+                                <img src="./assets/img/testi-1.jpg " class="rounded-circle shadow" alt="1111">
+                            </div>
+                            <h5>Rabbi Islam Rony</h5>
+                            <p class="text-center">Front-end developer</p>
+
+                            <div class="thin-line"></div>
+                            <div class="text-ico d-flex justify-content-start flex-column">
+                                <ul class="list-unstyled d-flex justify-content-start mb-0">
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                </ul>
+                                <p class="text-start">Before we define any approach, we need to define the brands'
+                                    overall
+                                    goal. We then need to dive</p>
+
+                            </div>
+                        </div>
+                        <div class="single-testimonial-item  d-flex flex-column   
+                    justify-content-between align-items-center text-center ">
+                            <div class="img-round">
+                                <img src="./assets/img/testi-1.jpg " class="rounded-circle shadow" alt="1111">
+                            </div>
+                            <h5>Rabbi Islam Rony</h5>
+                            <p class="text-center">Front-end developer</p>
+
+                            <div class="thin-line"></div>
+                            <div class="text-ico d-flex justify-content-start flex-column">
+                                <ul class="list-unstyled d-flex justify-content-start mb-0">
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                    <li><i><img src="./assets/icon/Star 11.png" alt="11111"></i></li>
+                                </ul>
+                                <p class="text-start">Before we define any approach, we need to define the brands'
+                                    overall
+                                    goal. We then need to dive</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer-area -->
+
+    <footer class="footer">
+        <div class="site-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-12">
+                        <div class="cta-box  d-flex align-items-center justify-content-between">
+                            <div class="text-box">
+                                <h2 class="">Get our pro offers </h2>
+                                <p class="text-white">Create a visual identity for your company, and an overall brand
+                                </p>
+                            </div>
+                            <div class="subscribe">
+                                <form action="#" class="subscribe-form">
+                                    <div class="form-group d-flex">
+                                        <input type="text" class="form-control rounded-left"
+                                            placeholder="Enter email address">
+                                        <input type="submit" value="Subscribe" class="form-control submit px-3">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-lg-4">
+                        <a class="d-inline-flex align-items-center mb-4  text-decoration-none" href="/">
+                            <img src="./assets/img/logo.png" alt="ddff">
+                        </a>
+                        <p class="text-muted hd">There are many variations of passages of available
+                        </p>
+                    </div>
+                    <div class="col-6 col-lg-2 d-flex  flex-column logo-text">
+                        <div class="ico-text d-flex  align-items-center mb-3">
+                            <div class="logo me-3 ">
+                                <a href="#">
+                                    <img src="./assets/icon/Facebook.png" alt="1222">
+                                </a>
+                            </div>
+                            <div class="text">
+                                Facebook
+                            </div>
+                        </div>
+                        <div class="ico-text d-flex  align-items-center">
+                            <div class="logo me-3">
+                                <a href="#">
+                                    <img src="./assets/icon/Twitter.png" alt="1222">
+                                </a>
+                            </div>
+                            <div class="text">
+                                Twitter
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 d-flex  flex-column logo-text">
+                        <div class="ico-text d-flex  align-items-center mb-3">
+                            <div class="logo me-3">
+                                <a href="#">
+                                    <img src="./assets/icon/Linkedin.png" alt="1222">
+                                </a>
+                            </div>
+                            <div class="text">
+                                Linkedin
+                            </div>
+                        </div>
+                        <div class="ico-text d-flex  align-items-center">
+                            <div class="logo me-3">
+                                <a href="#">
+                                    <img src="./assets/icon/Pinterest.png" alt="1222">
+                                </a>
+                            </div>
+                            <div class="text">
+                                Pinterest
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6 col-lg-2 offset-lg-2">
+                        <h5>Recent Post</h5>
+                        <p class="mt-4 text-muted">Top 5 Himalayan Treks <br>
+                            May 17,2021
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -666,19 +831,22 @@
 
 
 
-<!-- Swiper JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<link rel="stylesheet" href="./assets/js/jquery-1.12.4.min.js">
-<link rel="stylesheet" href="./assets/js/owl.carousel.min.js">
-<script src="./assets/js/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-<link rel="stylesheet" href="./assets/js/fontawesome.min.js">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="stylesheet" href="./assets/js/slick.min.js">
-<link rel="stylesheet" href="./assets/js/bootstrap.bundle.min.js">
-<script src="./assets/js/popper.js"></script>
-<script src="./assets/js/scripts.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script src="./assets/js/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="./assets/js/fontawesome.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src='./assets/js/bootstrap.bundle.min.js'></script>
+    <script src="./assets/js/popper.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+
+</body>
 
 </html>

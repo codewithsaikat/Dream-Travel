@@ -7,7 +7,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
-  background-color: #f8f8f8;
+  background-color: #F5F6F8;
 }
 
 a {
@@ -415,6 +415,160 @@ textarea:focus {
     transform: translatey(0px);
   }
 }
+.slider-1 {
+  padding: 100px 0px 100px;
+  overflow: hidden;
+}
+.slider-1 .slider-top {
+  display: flex;
+  margin-bottom: 80px;
+}
+.slider-1 .slider-top-left {
+  width: 38%;
+}
+.slider-1 .slider-top-left-p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.slider-1 h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+}
+.slider-1 .slider-top-right {
+  padding-left: 170px;
+  flex: 1 1;
+}
+.slider-1 .slider-top-right-p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.about-slider {
+  position: relative;
+}
+.about-slider .card-all {
+  display: flex;
+  position: relative;
+}
+.about-slider .card-all .travel-card-active {
+  box-shadow: 0px 60px 140px -16px rgba(37, 45, 61, 0.06);
+}
+.about-slider .card-all .travel-card {
+  width: 643px;
+  margin-right: 5px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: block;
+  flex: 0 0 auto;
+}
+.about-slider .card-all .travel-card .travel-card--top {
+  position: relative;
+  height: 300px;
+  z-index: 0;
+  border-radius: 12px;
+}
+.about-slider .card-all .travel-card .travel-card--top img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+.about-slider .card-all .travel-card .travel-card--top::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -o-linear-gradient(344.28deg, rgba(13, 9, 45, 0.4) 0.53%, rgba(15, 11, 44, 0) 94.3%, rgba(15, 11, 44, 0.1) 100%);
+  background: linear-gradient(105.72deg, rgba(13, 9, 45, 0.4) 0.53%, rgba(15, 11, 44, 0) 94.3%, rgba(15, 11, 44, 0.1) 100%);
+  border-radius: 12px;
+}
+.about-slider .card-all .travel-card .travel-card--bottom {
+  display: block;
+  padding: 0px 40px 40px 44px;
+  z-index: 2;
+  background: #fff;
+  display: none;
+}
+.about-slider .card-all .travel-card .travel-card--bottom .travel-card--icon {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0px 50px 60px -10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -45px;
+}
+.about-slider .card-all .travel-card h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  margin-bottom: 12px;
+  color: rgb(10, 9, 9);
+}
+.about-slider .card-all .travel-card p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #777F96;
+}
+.about-slider .travel-card-arrow {
+  position: absolute;
+  right: 24%;
+  bottom: 16%;
+  transform: translateX(-26%);
+}
+.about-slider .glide-arrows {
+  display: flex;
+  align-items: center;
+}
+.about-slider .glide-arrows .glide-arrow-left {
+  padding: 22px;
+  border: 1px solid #fff;
+  width: 61px;
+  height: 61px;
+  background: #fff;
+  margin: 0px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s all ease;
+}
+.about-slider .glide-arrows .glide-arrow-right {
+  padding: 22px;
+  border: 1px solid #fff;
+  width: 61px;
+  height: 61px;
+  background: #fff;
+  margin: 0px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s all ease;
+}
+
 .card-carousel {
   background-color: #f8f8f8;
   padding: 20px 108px;
@@ -639,7 +793,7 @@ textarea:focus {
   overflow: auto;
   margin-right: -115px;
   overflow-x: hidden;
-  margin-left: -39px;
+  margin-left: -8px;
 }
 .testimonial-list .slick-dots li.slick-active button:before {
   opacity: 100;
@@ -727,7 +881,7 @@ textarea:focus {
 .footer .site-section .cta-box .subscribe .subscribe-form {
   background: #fff;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .footer .site-section .cta-box .subscribe .subscribe-form input[type=text] {
   background: transparent !important;

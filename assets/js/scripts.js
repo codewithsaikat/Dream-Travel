@@ -89,3 +89,20 @@ $(document).ready(function (){
 
 });
 
+let config3 = {
+  type: 'carousel',
+  perView: 2,
+  autoplay:2500,
+  animationDuration: 600,
+  animationTimingFunc: 'linear',
+  breakpoints: {
+      767: {
+          perView: 1
+      },
+      992: {
+          perView: 2
+      }
+  }
+};
+
+new Glide('.about-slider', config3).mount();
