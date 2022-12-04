@@ -21,7 +21,16 @@
 /* Medium Layout: 1280px. */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
    
-      
+      .flip-box .feature {
+        width: 600px;
+        height: 300px;    
+        object-fit: cover;
+      }
+      .feature-back-img img {
+        width: 600px;   
+        height: 300px;
+        object-fit: cover;
+      }
     
     /* .d-grid {
         flex-direction: column;
@@ -62,6 +71,16 @@
     .searchbox {
     width: 100%;
    }
+   .flip-box .feature {
+    width: 600px;
+    height: 300px;    
+    object-fit: cover;
+  }
+  .feature-back-img img {
+    width: 600px;   
+    height: 300px;
+    object-fit: cover;
+  }
     
     
 }
