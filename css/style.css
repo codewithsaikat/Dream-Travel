@@ -34,10 +34,12 @@ textarea:focus {
 }
 .header-area ul li a {
   color: #fff;
+  font-size: 14px;
+  line-height: 21px;
 }
 .header-area .btn {
   height: 59px;
-  width: 152px;
+  width: 153px;
   border: 1px solid #777F96;
   color: #ffffff;
   font-size: 14px;
@@ -65,14 +67,15 @@ textarea:focus {
 }
 .hero-area--1 p {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   font-weight: 500;
   padding-bottom: 55px;
 }
-.hero-area--1 .searchbox .col-md-5,
-.hero-area--1 .searchbox .col-md-3,
-.hero-area--1 .searchbox .col-md-4 {
+
+.searchbox .col-md-5,
+.searchbox .col-md-3,
+.searchbox .col-md-4 {
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -90,9 +93,14 @@ textarea:focus {
   overflow: hidden;
 }
 
+.d-grid {
+  gap: 20px;
+}
+
 .searchbox {
+  width: 575px;
   background-color: #fff;
-  padding: 5px 40px 5px 40px;
+  padding: 8px 39px 7px 35px;
   border-radius: 0.25rem;
 }
 .searchbox .form-control {
@@ -130,11 +138,19 @@ textarea:focus {
 }
 
 .btn-hero .btn {
-  padding: 24px 50px;
+  padding: 26px 48px;
+  border-radius: 0.25rem;
+  background-color: #34A5E4;
+  color: #fff;
+  border-color: #708be4;
 }
 
 .feature-cards {
   padding: 140px 0px 96px;
+}
+.feature-cards .feature {
+  height: 306px;
+  width: 323px;
 }
 .feature-cards .feature-icon {
   display: inline-flex;
@@ -148,18 +164,11 @@ textarea:focus {
   border-radius: 0.75rem;
   box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
 }
-.feature-cards .gap {
-  gap: 40px 40px;
-}
 .feature-cards .feature {
-  flex: 30%;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
   background-color: #fff;
-}
-.feature-cards .pdn {
-  padding: 101px 100px 81px;
 }
 .feature-cards h2 {
   font-size: 45px;
@@ -195,10 +204,10 @@ textarea:focus {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 }
-@media screen and (min-width: 1380px) {
+@media screen and (min-width: 1100px) {
   .feature-cards .box-container {
     flex-direction: row;
     width: 100%;
@@ -207,7 +216,6 @@ textarea:focus {
 .feature-cards .box-item {
   position: relative;
   -webkit-backface-visibility: hidden;
-  width: 70%;
 }
 .feature-cards .flip-box {
   -ms-transform-style: preserve-3d;
@@ -281,18 +289,6 @@ textarea:focus {
 }
 .feature-cards .flip-box-img {
   margin-top: 25px;
-}
-.feature-cards .flip-box-button {
-  background-color: transparent;
-  border: 2px solid #fff;
-  border-radius: 2px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 25px;
-  padding: 15px 20px;
-  text-transform: uppercase;
 }
 
 .tour-place {

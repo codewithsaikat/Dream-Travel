@@ -11,25 +11,57 @@
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
-   
+   /* .searchbox {
+    width: 100%;
+   } */
 
     
 }
 
 /* Medium Layout: 1280px. */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+   
+      
+    
+    /* .d-grid {
+        flex-direction: column;
+    } */
     
     .slick-prev {
         left: 512px;
     }
     
-
-
+     .btn-create {
+        display: flex;
+        margin-top: 5%;
+        margin-left: 40%;
+    }
+    .btn-create .btn {
+        width: 100%;
+    } 
 }
-
   
-/*Medium small layout: 480px. */
+/*Medium small layout: 767px. */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+     .d-grid {
+        flex-direction: column;
+    }
+    .btn-create {
+        display: flex;
+        margin-top: 7%;
+        margin-left: 24%;
+    } 
+    .btn-create .btn {
+        width: 100%;
+    } 
+    .btn-primary {
+        width: 50% ;   
+        margin-top: 50px;
+    }
+
+    .searchbox {
+    width: 100%;
+   }
     
     
 }
@@ -46,9 +78,24 @@
  /* Mobile Layout: 320px. */
  @media only screen and (max-width: 767px) {
     
-    .slick-prev {
-        left: 100px;
+    .d-grid {
+        flex-direction: column;
     }
+
+     .searchbox {
+        width: 100%;
+    }
+    .btn-primary {
+        width: 100% ;   
+        margin-top: 50px;
+    }
+    .btn-hero {
+        margin-top: 30px;
+    } 
+    .btn-create .btn {
+        width: 100%;
+        margin-top: 20px;
+    } 
    
    
 
