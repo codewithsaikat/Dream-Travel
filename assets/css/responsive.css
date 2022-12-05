@@ -5,9 +5,13 @@
 }
 @media only screen and (min-width: 1400px) and (max-width: 1800px) {
     
-    
+    .slick-prev {
+        left: 900px;
+    }
 
-    
+    .footer .site-section .cta-box {
+        width: 82%;
+    }
     
 
 }
@@ -17,7 +21,7 @@
     width: 100%;
    } */
    .footer .site-section .cta-box {
-    width: 86%;
+    width: 91%;
 }
 
 .footer .site-section .cta-box .text-box {
