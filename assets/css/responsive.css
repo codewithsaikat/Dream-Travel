@@ -10,7 +10,7 @@
     }
 
     .footer .site-section .cta-box {
-        width: 82%;
+        width: 89%;
     }
     
 
@@ -27,11 +27,18 @@
 .footer .site-section .cta-box .text-box {
     flex: 59%;
 }
+
+.travel-card--top img {
+    width: 553px;
+}
     
 }
 
 /* Medium Layout: 1280px. */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .travel-card--top img {
+        width: 553px;
+    }
     .footer .site-section .cta-box {
         width: 82%;
     }

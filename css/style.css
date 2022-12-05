@@ -3,8 +3,10 @@ body {
   position: relative;
   line-height: 1.8;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   background-color: #F5F6F8;
@@ -391,6 +393,7 @@ textarea:focus {
 }
 .logo-section .logo-img {
   transform: translatey(0px);
+  animation: float 3s ease-in-out infinite;
   gap: 50px 10px;
 }
 .logo-section .logo-img div {
@@ -408,10 +411,14 @@ textarea:focus {
     transform: translatey(0px);
   }
 }
-/*---=== ABOUT US ===---*/
-._abt_drm_trvl_sec {
-  padding: 70px 0px 70px;
-  background: #0bbbc1;
+/*---=== Glide-slider===---*/
+.glide__track {
+  overflow: inherit;
+}
+
+.slider-1 {
+  padding: 70px 0px 0px;
+  background-color: #f8f8f8;
   overflow: hidden;
 }
 
@@ -419,17 +426,17 @@ textarea:focus {
   position: relative;
 }
 
-._abt_drm_trvl_top {
+.slider-top {
   display: flex;
   align-items: center;
   margin-bottom: 80px;
 }
 
-._abt_drm_trvl_top_lft {
+.slider-top-left {
   width: 38%;
 }
 
-._abt_drm_trvl_top_lft_p {
+.slider-top-left-p {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -438,37 +445,38 @@ textarea:focus {
   letter-spacing: 0.17em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  color: #4141A5;
 }
 
-._abt_drm_trvl_top_lft_h1 {
+.slider-top-left-h1 {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
+  color: #292929;
 }
 
-._abt_drm_trvl_top_r8 {
+.slider-top-right {
   padding-left: 170px;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1;
   flex: 1 1;
 }
 
-._abt_drm_trvl_top_r8_p {
+.slider-top-right-p {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
+  color: #5C6272;
 }
 
-._abt_drm_trvl_crd_all {
+.travel-card-all {
   display: flex;
   position: relative;
 }
 
-._abt_drm_trvl_crd {
+.travel-card {
   width: 540px;
   border-radius: 12px;
   overflow: hidden;
@@ -477,15 +485,20 @@ textarea:focus {
   flex: 0 0 auto;
 }
 
-._abt_drm_trvl_crd_top {
+.travel-card--top {
   position: relative;
   height: 300px;
   z-index: 0;
   border-radius: 12px;
 }
 
-._abt_drm_trvl_crd_top img {
+.travel-card--top img {
   border-radius: 12px;
+  width: 641px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  max-width: 641px;
 }
 
 ._abt_drm_trvl_crd_top:after {
@@ -500,55 +513,36 @@ textarea:focus {
   border-radius: 12px;
 }
 
-._abt_drm_trvl_crd_btm {
+.travel-card--bottom {
   padding: 0px 40px 40px 44px;
   z-index: 2;
-  background: var(--bg1);
-  display: none;
+  background: #fff;
+  position: relative;
+  border-radius: 15px;
 }
 
 /*._abt_drm_trvl_crd_all ._active ._abt_drm_trvl_crd_btm{
   display: block;
 }*/
-._abt_drm_trvl_crd_all ._active {
-  -webkit-box-shadow: 0px 60px 140px -16px rgba(37, 45, 61, 0.06);
-  box-shadow: 0px 60px 140px -16px rgba(37, 45, 61, 0.06);
-}
-
-._abt_drm_trvl_crd_all ._active ._abt_drm_trvl_crd_top {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-._abt_drm_trvl_crd_all ._active ._abt_drm_trvl_crd_top img {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-._abt_drm_trvl_crd_btm_icon {
+.travel-card--icon {
   width: 88px;
   height: 88px;
   border-radius: 50%;
-  -webkit-box-shadow: 0px 50px 60px -10px rgba(0, 0, 0, 0.08);
+  background-color: #f5f5f5;
+  position: absolute;
   box-shadow: 0px 50px 60px -10px rgba(0, 0, 0, 0.08);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   position: relative;
   top: -45px;
 }
 
-._abt_drm_trvl_crd_btm_icon svg path {
+.travel-card--bottom-icon svg path {
   fill: #000;
 }
 
-._abt_drm_trvl_crd_h2 {
+.travel-card-h2 {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -557,7 +551,7 @@ textarea:focus {
   margin-bottom: 12px;
 }
 
-._abt_drm_trvl_crd_txt {
+.travel-card-txt {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -568,7 +562,7 @@ textarea:focus {
 ._abt_drm_trvl_crd_arow {
   position: absolute;
   right: 24%;
-  bottom: 16%;
+  bottom: 32%;
   -webkit-transform: translateX(-26%);
   -ms-transform: translateX(-26%);
   transform: translateX(-26%);
