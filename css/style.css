@@ -391,7 +391,7 @@ textarea:focus {
 }
 .logo-section .logo-img {
   transform: translatey(0px);
-  gap: 30px 10px;
+  gap: 50px 10px;
 }
 .logo-section .logo-img div {
   flex: 20%;
@@ -779,11 +779,7 @@ textarea:focus {
 
 /*****testimonial-carousel****/
 .testimonial {
-  padding: 60px 102px;
-  padding-bottom: 294px;
-}
-.testimonial .mg-l {
-  margin-left: 5px;
+  padding: 20px 108px 300px;
 }
 .testimonial span {
   font-size: 16px;
@@ -806,12 +802,19 @@ textarea:focus {
   line-height: 28px;
   width: 60%;
 }
-
-.testimonial-list {
+.testimonial .testimonial-list {
   margin-top: 40px;
   gap: 30px 30px;
 }
-.testimonial-list .single-testimonial-item {
+.testimonial .testimonial-list .slick-list {
+  position: relative;
+  display: block;
+  overflow: auto;
+  margin-right: -150px;
+  margin-left: -20px;
+  overflow-x: hidden;
+}
+.testimonial .testimonial-list .single-testimonial-item {
   background: rgb(255, 255, 255);
   text-align: center;
   margin: 0px 15px;
@@ -822,34 +825,34 @@ textarea:focus {
   margin-top: 70px;
   border-radius: 10px;
 }
-.testimonial-list .single-testimonial-item .img-round img {
+.testimonial .testimonial-list .single-testimonial-item .img-round img {
   height: 75px;
   width: 75px;
   margin-top: -30px;
   margin-bottom: 38px;
 }
-.testimonial-list .single-testimonial-item h5 {
+.testimonial .testimonial-list .single-testimonial-item h5 {
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
 }
-.testimonial-list .single-testimonial-item .text-center {
+.testimonial .testimonial-list .single-testimonial-item .text-center {
   width: 100%;
   font-size: 14px;
   line-height: 14px;
   margin-bottom: 27px;
 }
-.testimonial-list .single-testimonial-item .thin-line {
+.testimonial .testimonial-list .single-testimonial-item .thin-line {
   height: 1px;
   width: 80%;
   background-color: #ebe5fc;
   margin: auto;
 }
-.testimonial-list .single-testimonial-item .text-ico {
+.testimonial .testimonial-list .single-testimonial-item .text-ico {
   margin-top: 21px;
   margin-left: 30px;
 }
-.testimonial-list .single-testimonial-item .text-start {
+.testimonial .testimonial-list .single-testimonial-item .text-start {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -857,31 +860,30 @@ textarea:focus {
   margin-top: 10px;
   margin-bottom: 25px;
 }
-.testimonial-list .slick-prev:before,
-.testimonial-list .slick-next:before {
+
+.slick-prev:before,
+.slick-next:before {
   color: #0f0f0f;
 }
-.testimonial-list .slick-dots li button:before {
+
+.slick-dots li button:before {
   color: #d8d8d8;
   font-size: 40px;
   opacity: 0.75;
 }
-.testimonial-list .slick-list {
-  overflow: auto;
-  margin-right: -115px;
-  overflow-x: hidden;
-  margin-left: -8px;
-}
-.testimonial-list .slick-dots li.slick-active button:before {
+
+.slick-dots li.slick-active button:before {
   opacity: 100;
   color: #0bbbc1;
   font-size: 40px;
 }
-.testimonial-list .slick-dots {
+
+.slick-dots {
   bottom: -39px;
   left: 40px;
 }
-.testimonial-list .slick-prev {
+
+.slick-prev {
   position: absolute;
   position: absolute;
   top: -75px;
@@ -896,7 +898,8 @@ textarea:focus {
   outline: none;
   border-radius: 2px solid #333;
 }
-.testimonial-list .slick-next {
+
+.slick-next {
   position: absolute;
   top: -75px;
   right: 34px;

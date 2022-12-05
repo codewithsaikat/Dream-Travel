@@ -48,6 +48,10 @@
     .btn-create .btn {
         width: 100%;
     } 
+    .single-team-item p {
+       
+        left: -39px;
+    }
 }
   
 /*Medium small layout: 767px. */
@@ -81,6 +85,17 @@
     height: 300px;
     object-fit: cover;
   }
+  .single-team-item p {
+    left: 0px;
+}
+    
+.single-team-item p {
+       
+    left: -50px;
+    }
+.single-team-item p {
+        left: -11px;
+    }
     
     
 }
@@ -89,8 +104,11 @@
 
  /* Wide Mobile Layout: 480px. */
  @media only screen and (min-width: 480px) and (max-width: 767px) {
-    
-    
+   
+    .single-team-item p {
+       
+        left: -50px;
+    }
  }
 
  
@@ -115,8 +133,11 @@
         width: 100%;
         margin-top: 20px;
     } 
-   
-   
+    .single-team-item p {
+       
+        left: -13px;
+    }
+    
 
 }
 
