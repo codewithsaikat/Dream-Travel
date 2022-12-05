@@ -7,8 +7,9 @@ $(document).ready(function (){
         // autoplay: true,
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         dots: true,
+       
         responsive: [
           {
             breakpoint: 1200,
@@ -61,7 +62,7 @@ $(document).ready(function (){
     // autoplay: true,
     infinite: true,  
     slidesToShow: 4,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
      dots: false,
     responsive: [
       {

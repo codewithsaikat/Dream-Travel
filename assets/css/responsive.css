@@ -1,5 +1,7 @@
 @media only screen and (min-width: 1800px) and (max-width: 2000px) {
-    
+    .footer .site-section .cta-box {
+        width: 69%;
+    }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1800px) {
     
@@ -14,13 +16,30 @@
    /* .searchbox {
     width: 100%;
    } */
+   .footer .site-section .cta-box {
+    width: 86%;
+}
 
+.footer .site-section .cta-box .text-box {
+    flex: 59%;
+}
     
 }
 
 /* Medium Layout: 1280px. */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-   
+    .footer .site-section .cta-box {
+        width: 82%;
+    }
+    .footer .site-section .cta-box .text-box {
+        flex: 47%;
+    }
+    .subscribe {
+        margin-left: -89px;
+    }
+    .cta-box .text-box {
+        flex: 48%;
+    }
       .flip-box .feature {
         width: 600px;
         height: 300px;    
@@ -52,6 +71,15 @@
        
         left: -39px;
     }
+
+    .testimonial .slick-list {
+        margin-right: -50px;
+        margin-left: -20px;
+    }
+    .footer .site-section .cta-box  {
+        flex-direction: column;
+    }
+
 }
   
 /*Medium small layout: 767px. */
@@ -97,6 +125,20 @@
         left: -11px;
     }
     
+.slick-prev {
+        left: 460px;
+    }
+.footer .site-section .cta-box {
+        
+        top: -115px;
+        padding: 35px 65px;
+        border-radius: 20px;
+        gap: 15%;
+        width: 84%;
+        left: 71px;
+        flex-direction: column;
+    }
+    
     
 }
 
@@ -114,6 +156,17 @@
  
  /* Mobile Layout: 320px. */
  @media only screen and (max-width: 767px) {
+
+
+.footer .site-section .cta-box {
+    top: -155px;
+    padding: 38px 31px;
+    border-radius: 20px;
+    gap: 15%;
+    width: 88%;
+    left: 40px;
+    flex-direction: column;
+}
     
     .d-grid {
         flex-direction: column;
@@ -137,6 +190,10 @@
        
         left: -13px;
     }
+    .slick-prev {
+        left: 300px;
+    }
+    
     
 
 }

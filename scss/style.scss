@@ -1225,7 +1225,7 @@ textarea:focus {
 
 .testimonial {
 
-  padding: 20px 108px 300px;
+  padding: 93px 108px 288px;
 
   .slick-list {
     
@@ -1270,10 +1270,21 @@ textarea:focus {
 
   .testimonial-list {
   
-    margin-top: 40px;
-    gap: 30px 30px;
+    margin-top: 23px;
+    gap: 40px 40px;
 
+.testimonial-slide {
+  margin: 0px 15px;
+}
+.slick-track
+{
+    display: flex !important;
+}
 
+.slick-slide
+{
+    height: inherit !important;
+}
 
 
     .single-testimonial-item {
@@ -1286,6 +1297,10 @@ textarea:focus {
       flex: 20%;
       margin-top: 70px;
       border-radius: 10px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: contain;
+      position: relative;
 
       .img-round {
 
@@ -1436,12 +1451,13 @@ textarea:focus {
       background-repeat: no-repeat;
       position: absolute;
       top: -115px;
-      padding: 55px 80px;
-      border-radius: 10px;
-      gap: 0px 202px;
+      padding: 57px 89px;
+      border-radius: 20px;
+      gap: 15%;
+      width: 88%;
 
       .text-box {
-        flex: 47%;
+        flex: 57%;
       }
 
       h2 {
@@ -1455,15 +1471,17 @@ textarea:focus {
         font-size: 16px;
         color: #fff;
         font-weight: 400;
+        line-height: 28px;
 
       }
 
       .subscribe {
         flex: 70%;
+         margin-top: 35px;
 
         .subscribe-form {
           background: #fff;
-          padding: 10px;
+          padding: 6px;
           border-radius: 5px;
 
 
@@ -1475,12 +1493,13 @@ textarea:focus {
             font-size: 16px;
             height: 56px;
             border-radius: 0;
+            padding: 0px 20px;
           }
 
           input[type=submit] {
             color: #fff !important;
             display: block;
-            width: 150px;
+            width: 170px;
             height: 56px;
             font-size: 14px;
             background: #0F415C !important;
