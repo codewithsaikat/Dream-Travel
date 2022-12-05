@@ -1226,10 +1226,21 @@ textarea:focus {
 .testimonial {
 
   padding: 20px 108px 300px;
+
+  .slick-list {
+    
+    display: block;
+    overflow: auto;
+    margin-right: -150px;
+    margin-left: -20px;
+    overflow-x: hidden;
+       
+   
+  }
  
-  // .mg-l {
-  //   margin-left: 5px;
-  // }
+  .mg-l {
+    margin-left: 2px;
+  }
 
   span {
     font-size: 16px;
@@ -1262,18 +1273,7 @@ textarea:focus {
     margin-top: 40px;
     gap: 30px 30px;
 
-    .slick-list {
-      position: relative;
-      display: block;
-      overflow: auto;
-      margin-right: -150px;
-      margin-left: -20px;
-      overflow-x: hidden;
-      
 
-      
-     
-    }
 
 
     .single-testimonial-item {
@@ -1340,6 +1340,7 @@ textarea:focus {
 
   }
 }
+
 
 
 .slick-prev:before,

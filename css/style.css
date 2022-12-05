@@ -781,6 +781,16 @@ textarea:focus {
 .testimonial {
   padding: 20px 108px 300px;
 }
+.testimonial .slick-list {
+  display: block;
+  overflow: auto;
+  margin-right: -150px;
+  margin-left: -20px;
+  overflow-x: hidden;
+}
+.testimonial .mg-l {
+  margin-left: 2px;
+}
 .testimonial span {
   font-size: 16px;
   font-weight: 600;
@@ -805,14 +815,6 @@ textarea:focus {
 .testimonial .testimonial-list {
   margin-top: 40px;
   gap: 30px 30px;
-}
-.testimonial .testimonial-list .slick-list {
-  position: relative;
-  display: block;
-  overflow: auto;
-  margin-right: -150px;
-  margin-left: -20px;
-  overflow-x: hidden;
 }
 .testimonial .testimonial-list .single-testimonial-item {
   background: rgb(255, 255, 255);
