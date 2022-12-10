@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 body {
   position: relative;
   line-height: 1.8;
@@ -33,6 +34,7 @@ textarea:focus {
 }
 
 .header-area {
+  padding-top: 7px;
   position: absolute;
   z-index: 9;
   left: 0;
@@ -45,12 +47,13 @@ textarea:focus {
   line-height: 21px;
 }
 .header-area .btn {
-  height: 59px;
+  height: 55px;
   width: 153px;
   border: 1px solid #777F96;
+  font-family: "Inter", sans-serif;
   color: #ffffff;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 19px;
 }
 
@@ -65,7 +68,7 @@ textarea:focus {
 }
 
 .hero-area--1 {
-  padding: 160px 0px 145px;
+  padding: 164px 0px 145px;
 }
 .hero-area--1 h1 {
   font-size: 62px;
@@ -74,9 +77,10 @@ textarea:focus {
 }
 .hero-area--1 p {
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
-  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   padding-bottom: 55px;
 }
 
@@ -145,6 +149,10 @@ textarea:focus {
 }
 
 .btn-hero .btn {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
   padding: 26px 48px;
   border-radius: 0.25rem;
   background-color: #34A5E4;

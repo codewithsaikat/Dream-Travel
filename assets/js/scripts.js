@@ -4,7 +4,7 @@
 $(document).ready(function (){
     
     $('.card-list').slick({
-        autoplay: true,
+        // autoplay: true,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -59,7 +59,7 @@ $(document).ready(function (){
 $(document).ready(function (){
 
   $('.testimonial-list').slick({
-    autoplay: true,
+    // autoplay: true,
     infinite: true,  
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -116,7 +116,7 @@ $(document).ready(function (){
 let config3 = {
   type: 'carousel',
   perView: 2,
-  autoplay:2500,
+  // autoplay:2500,
   animationDuration: 600,
   animationTimingFunc: 'linear',
   breakpoints: {
