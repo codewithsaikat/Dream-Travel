@@ -182,8 +182,8 @@ textarea:focus {
 .feature-cards .feature {
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
   background-color: #fff;
+  box-shadow: 0 60px 200px rgba(35, 47, 70, 0.06);
 }
 .feature-cards h2 {
   font-size: 45px;
@@ -314,7 +314,6 @@ textarea:focus {
   background-color: #fff;
   flex: 15%;
   border-radius: 10px;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   transition: transform 0.5s;
 }
 .tour-place .tour-section:hover {
@@ -400,8 +399,6 @@ textarea:focus {
   margin-bottom: 90px;
 }
 .logo-section .logo-img {
-  transform: translatey(0px);
-  animation: float 3s ease-in-out infinite;
   gap: 50px 10px;
 }
 .logo-section .logo-img div {
@@ -692,7 +689,7 @@ textarea:focus {
   object-fit: contain;
   position: relative;
 }
-.single-team-item .btn {
+.single-team-item .btn-btn-1 {
   height: 51px;
   width: 40%;
   background-color: rgba(255, 255, 255, 0.3);
@@ -705,6 +702,7 @@ textarea:focus {
   font-size: 20px;
   font-weight: 600;
   line-height: 20px;
+  border: none;
 }
 .single-team-item h3 {
   color: #fff;
@@ -713,18 +711,19 @@ textarea:focus {
   line-height: 34px;
   position: absolute;
   bottom: 54px;
-  left: 30px;
+  left: 47px;
   display: block;
+  z-index: 6666;
 }
 .single-team-item p {
   color: #fff;
   font-size: 16px;
   line-height: 16px;
   font-weight: 500;
-  left: -27px;
-  position: absolute;
   bottom: 19px;
-  display: block;
+  padding-left: 47px;
+  position: absolute;
+  z-index: 6666;
 }
 
 .slick-prev:before,
@@ -732,20 +731,10 @@ textarea:focus {
   color: #0f0f0f;
 }
 
-.slick-dots li button:before {
-  color: #d8d8d8;
-  font-size: 40px;
-  opacity: 0.75;
-}
-
 .slick-dots li.slick-active button:before {
   opacity: 100;
   color: #0bbbc1;
   font-size: 40px;
-}
-
-.slick-dots {
-  bottom: -5px;
 }
 
 .slick-prev {
@@ -862,7 +851,7 @@ textarea:focus {
 .testimonial .testimonial-list .single-testimonial-item .thin-line {
   height: 1px;
   width: 80%;
-  background-color: #ebe5fc;
+  background-color: #EFEFEF;
   margin: auto;
 }
 .testimonial .testimonial-list .single-testimonial-item .text-ico {
@@ -881,23 +870,6 @@ textarea:focus {
 .slick-prev:before,
 .slick-next:before {
   color: #0f0f0f;
-}
-
-.slick-dots li button:before {
-  color: #d8d8d8;
-  font-size: 40px;
-  opacity: 0.75;
-}
-
-.slick-dots li.slick-active button:before {
-  opacity: 100;
-  color: #0bbbc1;
-  font-size: 40px;
-}
-
-.slick-dots {
-  bottom: -39px;
-  left: 40px;
 }
 
 .slick-prev {
@@ -947,6 +919,10 @@ textarea:focus {
 }
 .footer .site-section .hd {
   width: 70%;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer .site-section .hd-2 {
+  color: rgba(255, 255, 255, 0.5);
 }
 .footer .site-section .cta-box {
   background-image: url(../assets/img/footer-bg.png);
