@@ -3,7 +3,7 @@
   $(document).ready(function () {
 
     $('.card-list').slick({
-      // autoplay: true,
+      autoplay: true,
       autoplaySpeed: 5000,
       infinite: true,
       slidesToShow: 3,
@@ -61,7 +61,7 @@
   $(document).ready(function () {
 
     $('.testimonial-list').slick({
-      // autoplay: true,
+      autoplay: true,
       autoplaySpeed: 5000,
       infinite: true,
       slidesToShow: 4,
@@ -103,7 +103,7 @@
   $(document).ready(function () {
 
     $('.travel-card-all').slick({
-      // autoplay: true,
+      autoplay: true,
       autoplaySpeed: 5000,
       speed: 800,
       lazyLoad: 'progressive',
@@ -165,7 +165,7 @@
   // Init slick slider + animation
 
   $('.slider').slick({
-    // autoplay: true,
+    autoplay: true,
     speed: 800,
     lazyLoad: 'progressive',
     arrows: false,
