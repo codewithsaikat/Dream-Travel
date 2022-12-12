@@ -309,16 +309,57 @@ textarea:focus {
   margin-right: -300px;
 }
 .explore .slider-1 {
-  padding: 70px 90px 40px;
+  padding: 73px 100px 30px;
   overflow: hidden;
+  position: relative;
+}
+.explore .slider-1 .prev-arrow-Custom-1 {
+  right: 280px;
+  position: absolute;
+  z-index: 1010;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  z-index: 999;
+  bottom: 95px;
+}
+.explore .slider-1 .next-arrow-Custom-1 {
+  right: 370px;
+  position: absolute;
+  z-index: 1010;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  z-index: 999;
+  bottom: 95px;
 }
 .explore .slider-1 .slider-top {
   display: flex;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 72px;
 }
 .explore .slider-top-left {
   width: 38%;
+}
+.explore .travel-card-h2 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 46px;
+  color: #292929;
+}
+.explore .travel-card-p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #5C6272;
 }
 .explore .slider-top-left-p {
   font-family: Poppins;
@@ -351,7 +392,7 @@ textarea:focus {
   font-size: 16px;
   line-height: 28px;
   color: #5C6272;
-  margin-top: 40px;
+  margin-top: 45px;
 }
 .explore .travel-card-all {
   display: flex;
@@ -367,7 +408,7 @@ textarea:focus {
 }
 .explore .travel-card--top {
   position: relative;
-  height: 290px;
+  height: 300px;
   z-index: 0;
   border-radius: 12px;
 }
@@ -388,13 +429,14 @@ textarea:focus {
   width: 88px;
   height: 88px;
   border-radius: 50%;
-  background-color: #fafafa;
+  background-color: #fff;
   position: absolute;
+  box-shadow: 0px 50px 60px -10px rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  top: -45px;
+  top: -43px;
 }
 .explore .travel-card--bottom .travel-card-h2 {
   font-family: Poppins;
@@ -412,7 +454,7 @@ textarea:focus {
 }
 
 .tour-place {
-  padding: 140px 100px 100px;
+  padding: 145px 100px 100px;
   background-color: #f8f8f8;
   border-radius: 10px;
 }

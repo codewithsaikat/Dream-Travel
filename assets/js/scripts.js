@@ -64,7 +64,7 @@
       // autoplay: true,
       autoplaySpeed: 5000,
       infinite: true,
-      slidesToShow: 4,    
+      slidesToShow: 4,
       slidesToScroll: 1,
       dots: false,
       variableWidth: false,
@@ -103,18 +103,20 @@
   $(document).ready(function () {
 
     $('.travel-card-all').slick({
-      autoplay: true,
+      // autoplay: true,
       autoplaySpeed: 5000,
+      speed: 800,
+      lazyLoad: 'progressive',
       variableWidth: true,
-      infinite: true,   
+      infinite: true,
       cssEase: 'linear',
       // centerMode: true,
       slidesToShow: 2,
       slidesToScroll: 1,
       dots: false,
       arrows: true,
-      prevArrow: '<button class="button-slider slide-arrow prev-arrow-Custom"><i class="fa-solid fa-arrow-right"></i></button>',
-      nextArrow: '<button class="button-slider slide-arrow next-arrow-Custom"><i class="fa-solid fa-arrow-left"></i></button>',
+      prevArrow: '<button class="button-slider slide-arrow prev-arrow-Custom-1"><i class="fa-solid fa-arrow-right"></i></button>',
+      nextArrow: '<button class="button-slider slide-arrow next-arrow-Custom-1"><i class="fa-solid fa-arrow-left"></i></button>',
 
       responsive: [{
           breakpoint: 1200,
@@ -161,13 +163,14 @@
   }).slickAnimation();
 
   // Init slick slider + animation
-$('.slider').slick({
-  // autoplay: true,
-  speed: 800,
-  lazyLoad: 'progressive',
-  arrows: false,
-  dots: true,
-}).slickAnimation();
+
+  $('.slider').slick({
+    // autoplay: true,
+    speed: 800,
+    lazyLoad: 'progressive',
+    arrows: false,
+    dots: true,
+  }).slickAnimation();
 
 
   // let config3 = {

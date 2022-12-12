@@ -493,21 +493,68 @@ textarea:focus {
   .slick-list {
     margin-right: -300px;
   }
- 
+
   .slider-1 {
-    padding: 70px 90px 40px;
+    padding: 73px 100px 30px;
     overflow: hidden;
+    position: relative;
+
+    .prev-arrow-Custom-1 {
+      right: 280px;
+      position: absolute;
+      z-index: 1010;
+      background-color: #fff;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      z-index: 999;
+      bottom: 95px;
+    }
+
+    .next-arrow-Custom-1 {
+
+      right: 370px;
+      position: absolute;
+      z-index: 1010;
+      background-color: #fff;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      z-index: 999;
+      bottom: 95px;
+
+    }
 
     .slider-top {
       display: flex;
       align-items: center;
-      margin-bottom: 80px;
+      margin-bottom: 72px;
     }
 
   }
 
   .slider-top-left {
     width: 38%;
+  }
+
+  .travel-card-h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 46px;
+    color: #292929;
+  }
+
+  .travel-card-p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #5C6272;
   }
 
   .slider-top-left-p {
@@ -544,7 +591,7 @@ textarea:focus {
     font-size: 16px;
     line-height: 28px;
     color: #5C6272;
-    margin-top: 40px;
+    margin-top: 45px;
   }
 
   .travel-card-all {
@@ -563,7 +610,7 @@ textarea:focus {
 
   .travel-card--top {
     position: relative;
-    height: 290px;
+    height: 300px;
     z-index: 0;
     border-radius: 12px;
   }
@@ -582,18 +629,19 @@ textarea:focus {
     display: none;
     padding: 0px 40px 30px 45px;
     background: #fff;
+
     .travel-card--icon {
       width: 88px;
       height: 88px;
       border-radius: 50%;
-      background-color: #fafafa;
+      background-color: #fff;
       position: absolute;
-      // box-shadow: 0px 50px 60px -10px rgb(0 0 0 / 8%);
+      box-shadow: 0px 50px 60px -10px rgb(0 0 0 / 8%);
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
-      top: -45px;
+      top: -43px;
     }
 
     .travel-card-h2 {
@@ -608,15 +656,15 @@ textarea:focus {
 
   }
 
-   .slick-current {    
-        .travel-card--bottom{
-          display: block;
-          z-index: 6666788;
-          animation-duration: 1s;
-          
-          
-        }
-      }       
+  .slick-current {
+    .travel-card--bottom {
+      display: block;
+      z-index: 6666788;
+      animation-duration: 1s;
+
+
+    }
+  }
 
 }
 
@@ -625,7 +673,7 @@ textarea:focus {
 // Featured tour place
 
 .tour-place {
-  padding: 140px 100px 100px;
+  padding: 145px 100px 100px;
   background-color: #f8f8f8;
   border-radius: 10px;
 
