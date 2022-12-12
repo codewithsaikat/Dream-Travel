@@ -100,6 +100,76 @@
 
   });
 
+  $(document).ready(function () {
+
+    $('.travel-card-all').slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
+      variableWidth: true,
+      infinite: true,   
+      cssEase: 'linear',
+      // centerMode: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: true,
+      prevArrow: '<button class="button-slider slide-arrow prev-arrow-Custom"><i class="fa-solid fa-arrow-right"></i></button>',
+      nextArrow: '<button class="button-slider slide-arrow next-arrow-Custom"><i class="fa-solid fa-arrow-left"></i></button>',
+
+      responsive: [{
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+
+        {
+          breakpoint: 765,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 380,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+
+      ]
+    });
+
+  }).slickAnimation();
+
+  // Init slick slider + animation
+$('.slider').slick({
+  // autoplay: true,
+  speed: 800,
+  lazyLoad: 'progressive',
+  arrows: false,
+  dots: true,
+}).slickAnimation();
+
+
   // let config3 = {
   //   type: 'carousel',
   //   perView: 2,
