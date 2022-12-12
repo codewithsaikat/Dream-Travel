@@ -10,7 +10,7 @@
     }
 
     .footer .site-section .cta-box {
-        width: 89%;
+        width: 87%;
     }
     
 
@@ -21,7 +21,7 @@
     width: 100%;
    } */
    .footer .site-section .cta-box {
-    width: 91%;
+    width: 80%;
 }
 
 .footer .site-section .cta-box .text-box {
@@ -78,10 +78,7 @@
     .btn-create .btn {
         width: 100%;
     } 
-    .single-team-item p {
-       
-        left: -39px;
-    }
+    
 
     .testimonial .slick-list {
         margin-right: -50px;
@@ -124,17 +121,8 @@
     height: 300px;
     object-fit: cover;
   }
-  .single-team-item p {
-    left: 0px;
-}
-    
-.single-team-item p {
-       
-    left: -50px;
-    }
-.single-team-item p {
-        left: -11px;
-    }
+  
+
     
 .slick-prev {
         left: 460px;
@@ -157,11 +145,13 @@
 
  /* Wide Mobile Layout: 480px. */
  @media only screen and (min-width: 480px) and (max-width: 767px) {
-   
-    .single-team-item p {
-       
-        left: -50px;
+    .prev-arrow-Custom {
+        top: -100px;
     }
+    .next-arrow-Custom {
+        top: -100px;
+    }
+    
  }
 
  
@@ -197,10 +187,7 @@
         width: 100%;
         margin-top: 20px;
     } 
-    .single-team-item p {
-       
-        left: -13px;
-    }
+    
     .slick-prev {
         left: 300px;
     }

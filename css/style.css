@@ -177,7 +177,7 @@ textarea:focus {
   font-size: 0rem;
   color: #fff;
   border-radius: 0.75rem;
-  box-shadow: 0 5px 15px hsla(0deg, 0%, 0%, 0.2);
+  box-shadow: 0 20px 160px rgba(45, 51, 60, 0.2);
 }
 .feature-cards .feature {
   padding: 30px;
@@ -711,7 +711,7 @@ textarea:focus {
   line-height: 34px;
   position: absolute;
   bottom: 54px;
-  left: 47px;
+  left: 35px;
   display: block;
   z-index: 6666;
 }
@@ -721,7 +721,7 @@ textarea:focus {
   line-height: 16px;
   font-weight: 500;
   bottom: 19px;
-  padding-left: 47px;
+  padding-left: 35px;
   position: absolute;
   z-index: 6666;
 }
@@ -731,41 +731,40 @@ textarea:focus {
   color: #0f0f0f;
 }
 
-.slick-dots li.slick-active button:before {
-  opacity: 100;
-  color: #0bbbc1;
-  font-size: 40px;
-}
-
-.slick-prev {
+.prev-arrow-Custom {
+  right: 25px;
   position: absolute;
-  position: absolute;
-  top: -75px;
-  left: 1009px;
-  z-index: 999;
+  z-index: 1000;
+  top: -120px;
   background-color: #fff;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
-  border-radius: 2px solid #333;
+  border: none;
+  z-index: 999;
+}
+.prev-arrow-Custom:active {
+  border: 1px solid #EDEEEF;
 }
 
-.slick-next {
+.next-arrow-Custom {
+  right: 110px;
   position: absolute;
-  top: -75px;
-  right: 34px;
-  z-index: 999;
+  z-index: 1000;
+  top: -120px;
   background-color: #fff;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
-  border-radius: 2px solid #333;
+  border: none;
+  z-index: 999;
+}
+.next-arrow-Custom:active {
+  border: 1px solid #EDEEEF;
 }
 
 /*****testimonial-carousel****/
@@ -787,6 +786,7 @@ textarea:focus {
   font-weight: 600;
   line-height: 25px;
   color: #4141A5;
+  letter-spacing: 2px;
 }
 .testimonial h2 {
   font-size: 40px;
@@ -836,11 +836,15 @@ textarea:focus {
   width: 75px;
   margin-top: -30px;
   margin-bottom: 38px;
+  box-shadow: 0px 30px 140px rgba(41, 33, 74, 0.1);
 }
 .testimonial .testimonial-list .single-testimonial-item h5 {
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
+  margin: 0px;
+  padding-bottom: 4px;
+  font-weight: 400;
 }
 .testimonial .testimonial-list .single-testimonial-item .text-center {
   width: 100%;
@@ -855,7 +859,7 @@ textarea:focus {
   margin: auto;
 }
 .testimonial .testimonial-list .single-testimonial-item .text-ico {
-  margin-top: 21px;
+  margin-top: 30px;
   margin-left: 30px;
 }
 .testimonial .testimonial-list .single-testimonial-item .text-start {
@@ -863,44 +867,46 @@ textarea:focus {
   font-weight: 400;
   line-height: 26px;
   width: 91%;
-  margin-top: 10px;
-  margin-bottom: 25px;
+  margin-top: 17px;
+  margin-bottom: 29px;
 }
-
-.slick-prev:before,
-.slick-next:before {
+.testimonial .slick-prev:before,
+.testimonial .slick-next:before {
   color: #0f0f0f;
 }
-
-.slick-prev {
+.testimonial .prev-arrow-Custom {
+  right: 25px;
   position: absolute;
-  position: absolute;
-  top: -75px;
-  left: 1009px;
-  z-index: 999;
+  z-index: 1000;
+  top: -85px;
   background-color: #fff;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
-  border-radius: 2px solid #333;
+  border: none;
+  z-index: 999;
 }
-
-.slick-next {
+.testimonial .prev-arrow-Custom:active {
+  border: 1px solid #EDEEEF;
+}
+.testimonial .next-arrow-Custom {
+  right: 110px;
   position: absolute;
-  top: -75px;
-  right: 34px;
-  z-index: 999;
+  z-index: 1000;
+  top: -85px;
   background-color: #fff;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
-  border-radius: 2px solid #333;
+  border: none;
+  z-index: 999;
+}
+.testimonial .next-arrow-Custom:active {
+  border: 1px solid #EDEEEF;
 }
 
 .footer .site-section {
@@ -929,7 +935,7 @@ textarea:focus {
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  top: -115px;
+  top: -119px;
   padding: 57px 89px;
   border-radius: 20px;
   gap: 15%;
@@ -968,17 +974,19 @@ textarea:focus {
   height: 56px;
   border-radius: 0;
   padding: 0px 20px;
+  font-weight: 500;
+  line-height: 25px;
 }
 .footer .site-section .cta-box .subscribe .subscribe-form input[type=submit] {
   color: #fff !important;
   display: block;
   width: 170px;
   height: 56px;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
   background: #0F415C !important;
   border: none;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
